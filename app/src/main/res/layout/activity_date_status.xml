@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:id="@+id/txt_date_status"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingTop="10dp"
+      android:text="Date Status"
+      android:textSize="30sp"
+      />
+  <TextView
+      android:id="@+id/txt_date_due_date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingTop="40dp"
+      android:text="Due Date : "
+      android:textSize="20sp"
+      />
+  <TextView
+      android:id="@+id/txt_date_lmp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingTop="10dp"
+      android:text="LMP : "
+      android:textSize="20sp"
+      />
+  <TextView
+      android:id="@+id/txt_date_pregnant_for"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingTop="10dp"
+      android:text="Pregnant FOR : "
+      android:textSize="20sp"
+      />
+  <TextView
+      android:id="@+id/txt_date_fetal_age"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingTop="10dp"
+      android:text="Fetal Age : "
+      android:textSize="20sp"
+      />
+  <TextView
+      android:id="@+id/txt_date_remaining_time"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingTop="10dp"
+      android:text="Remaining Time : "
+      android:textSize="20sp"
+      />
+</LinearLayout>

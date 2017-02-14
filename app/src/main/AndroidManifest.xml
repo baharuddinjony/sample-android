@@ -29,7 +29,6 @@
     <activity
         android:name=".WomanActivity"
         android:label="@string/your_status">
-
     </activity>
     <activity
         android:name=".WomanRegistrationActivity"
@@ -40,6 +39,51 @@
         <action android:name="android.intent.action.SEARCH"/>
       </intent-filter>
 
+    </activity>
+    <activity
+        android:name=".AllWeekTipsActivity">
+    </activity>
+    <activity
+        android:name=".ChangeDataActivity">
+    </activity>
+    <activity
+        android:name=".ChildCareActivity">
+    </activity>
+    <activity
+        android:name=".DailyTipsActivity">
+    </activity>
+    <activity
+        android:name=".DateStatusActivity">
+    </activity>
+    <activity
+        android:name=".HelpActivity">
+    </activity>
+    <activity
+        android:name=".NotificationActivity">
+    </activity>
+    <activity
+        android:name=".OtherActivity">
+    </activity>
+    <activity
+        android:name=".OvulationActivity">
+    </activity>
+    <activity
+        android:name=".SearchHospitalActivity">
+    </activity>
+    <activity
+        android:name=".SearchHospitalDoctorActivity">
+    </activity>
+    <activity
+        android:name=".WeekInfoActivity">
+    </activity>
+    <activity
+        android:name=".WeightStatusActivity">
+    </activity>
+    <activity
+        android:name=".ThisWeekActivity">
+    </activity>
+    <activity
+        android:name=".DialogeReminderActivity">
     </activity>
     <meta-data android:name="android.app.searchable"
         android:resource="@xml/searchable" />

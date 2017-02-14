@@ -35,8 +35,36 @@ public class WomanActivity extends AppCompatActivity {
     return true;
   }
 
-  @OnClick(R.id.btn_woman_reg) public void womanReg() {
+  @OnClick(R.id.txt_registration) public void womanReg() {
     Intent intent = new Intent(this, WomanRegistrationActivity.class);
+    startActivity(intent);
+  }
+  @OnClick(R.id.txt_date_status) public void dateStatus() {
+    Intent intent = new Intent(this, DateStatusActivity.class);
+    startActivity(intent);
+  }
+  @OnClick(R.id.txt_weight_status) public void weightStatus() {
+    Intent intent = new Intent(this, WeightStatusActivity.class);
+    startActivity(intent);
+  }
+  @OnClick(R.id.txt_week_info) public void weekInfo() {
+    Intent intent = new Intent(this, WeekInfoActivity.class);
+    startActivity(intent);
+  }
+  @OnClick(R.id.txt_baby_this_week) public void babyThisWeek() {
+    Intent intent = new Intent(this, ThisWeekActivity.class);
+    startActivity(intent);
+  }
+  @OnClick(R.id.txt_daily_tips) public void dailyTips() {
+    Intent intent = new Intent(this, DailyTipsActivity.class);
+    startActivity(intent);
+  }
+  @OnClick(R.id.txt_set_reminder) public void reminder() {
+    Intent intent = new Intent(this, NotificationActivity.class);
+    startActivity(intent);
+  }
+  @OnClick(R.id.txt_others) public void other() {
+    Intent intent = new Intent(this, OtherActivity.class);
     startActivity(intent);
   }
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:id="@+id/txt_ovulation_date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingTop="30dp"
+      android:text="Pleaase select the first day of your last menstrual period"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      />
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/btn_ovulation_select_date"
+      android:text="Select Date"
+      />
+  <TextView
+      android:id="@+id/txt_ovulation_cycle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:paddingTop="30dp"
+      android:text="Usual number ofdays in your cycle"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="type days"
+      android:inputType="number"
+      android:id="@+id/txt_reminder_details"
+      />
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/btn_ovulation_calculate"
+      android:text="Calculate"
+      />
+</LinearLayout>
