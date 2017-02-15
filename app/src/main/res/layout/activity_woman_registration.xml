@@ -2,112 +2,117 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-  <EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Enter Full Name"
-    android:id="@+id/txt_woman_fullname"
-    />
-  <Spinner
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/spn_woman_division"
+    android:fillViewport="true"
     >
-</Spinner>
-  <Spinner
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/spn_woman_district"
-      >
-  </Spinner>
-  <EditText
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:hint="Enter Opazila"
-      android:id="@+id/txt_woman_opazila"
-      />
-  <EditText
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:hint="Enter Union"
-      android:id="@+id/txt_woman_union"
-      />
-  <EditText
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:hint="Enter Mobile"
-      android:id="@+id/txt_woman_mobile"
-      />
-  <RadioButton
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Pregnant Woman"
-      android:id="@+id/radio_woman"
-      />
   <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="match_parent"
       android:orientation="vertical"
-      android:id="@+id/layout_woman"
       >
+    <EditText
+        android:id="@+id/txt_woman_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Full Name"
+        />
+    <Spinner
+        android:id="@+id/spn_woman_division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/divisions"
+        android:minHeight="40dp"
+        >
+    </Spinner>
+    <Spinner
+        android:id="@+id/spn_woman_district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        >
+    </Spinner>
+    <EditText
+        android:id="@+id/txt_woman_opazila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Opazila"
+        />
+    <EditText
+        android:id="@+id/txt_woman_union"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Union"
+        />
+    <EditText
+        android:id="@+id/txt_woman_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile"
+        />
+    <RadioButton
+        android:id="@+id/radio_woman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pregnant Woman"
+        />
+    <LinearLayout
+        android:id="@+id/layout_woman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+      <Button
+          android:id="@+id/btn_woman_lmp_date"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Select LMP Date"
+          />
+      <Button
+          android:id="@+id/btn_woman_due_date"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Select Due Date"
+          />
+      <EditText
+          android:id="@+id/txt_woman_cycle_time"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Cycle time (days)"
+          android:inputType="number"
+          />
+      <EditText
+          android:id="@+id/txt_woman_ovulation"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Ovulation (days)"
+          android:inputType="number"
+          />
+      <EditText
+          android:id="@+id/txt_woman_prepregnancy"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Pre Pregnanacy Weight (in kg)"
+          android:inputType="numberSigned"
+          />
+      <EditText
+          android:id="@+id/txt_woman_prepregnancy_height"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Pre Pregnanacy Height (in cm)"
+          android:inputType="number"
+          />
+    </LinearLayout>
+    <RadioButton
+        android:id="@+id/radio_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        />
     <Button
+        android:id="@+id/btn_woman_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select LMP Date"
-        android:id="@+id/btn_woman_lmp_date"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Select Due Date"
-        android:id="@+id/btn_woman_due_date"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Cycle time (days)"
-        android:inputType="number"
-        android:id="@+id/txt_woman_cycle_time"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ovulation (days)"
-        android:inputType="number"
-        android:id="@+id/txt_woman_ovulation"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Pre Pregnanacy Weight (in kg)"
-        android:inputType="number"
-        android:id="@+id/txt_woman_prepregnancy"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Pre Pregnanacy Height (in cm)"
-        android:inputType="number"
-        android:id="@+id/txt_woman_prepregnancy_height"
+        android:text="Save"
         />
   </LinearLayout>
-  <RadioButton
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Other"
-      android:id="@+id/radio_other"
-      />
-  <Button
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Save"
-      android:id="@+id/btn_woman_save"
-      />
-</LinearLayout>
 
 </ScrollView>

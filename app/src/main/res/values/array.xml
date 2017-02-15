@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="divisions">
+    <item>Dhaka</item>
+    <item>Chittagong</item>
+  </string-array>
+  <string-array name="dhaka_distric">
+    <item>Dhaka</item>
+    <item>Gazipur</item>
+  </string-array>
+  <string-array name="ctg_distric">
+    <item>Chittagong</item>
+    <item>Commilla</item>
+  </string-array>
+</resources>
