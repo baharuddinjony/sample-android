@@ -5,7 +5,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import com.sample.models.Reminder;
 import com.sample.models.WomanRegistration;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by User on 2/15/2017.
@@ -20,10 +23,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
   // Database Name
   private static final String DATABASE_NAME = "contactsManager";
 
-  // Contacts table name
+  // Registration table name
   private static final String TABLE_REGISTRATION = "registration";
+  private static final String TABLE_REMINDER = "reminder";
 
-  // Contacts Table Columns names
+  // Registration Table Columns names
   private static final String KEY_ID = "id";
   private static final String KEY_NAME = "full_name";
   private static final String KEY_DIVISION = "divison";
@@ -37,6 +41,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
   private static final String KEY_OVULATION = "ovulationDays";
   private static final String KEY_WEIGHT = "prePregnancyWeight";
   private static final String KEY_HEIGHT = "prePregnancyHeight";
+
+
+  private static final String KEY_REM_ID = "id";
+  private static final String KEY_REM_TITLE = "title";
+  private static final String KEY_REM_MESSAGE = "message";
+  private static final String KEY_REM_DATE = "rem_date";
+  private static final String KEY_REM_TIME = "rem_time";
+
   public DatabaseHelper(Context context) {
     super(context, DATABASE_NAME, null, DATABASE_VERSION);
   }
@@ -57,14 +69,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         + KEY_OVULATION + " INTEGER,"
         + KEY_WEIGHT + " REAL,"
         + KEY_HEIGHT + " INTEGER" + ")";
+    String CREATE_REMINDER_TABLE = "CREATE TABLE " + TABLE_REMINDER + "("
+        + KEY_REM_ID + " INTEGER PRIMARY KEY,"
+        + KEY_REM_TITLE + " TEXT,"
+        + KEY_REM_MESSAGE + " TEXT,"
+        + KEY_REM_DATE + " TEXT,"
+        + KEY_REM_TIME + " TEXT" + ")";
     db.execSQL(CREATE_REG_TABLE);
+    db.execSQL(CREATE_REMINDER_TABLE);
   }
 
   // Upgrading database
   @Override public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     // Drop older table if existed
     db.execSQL("DROP TABLE IF EXISTS " + TABLE_REGISTRATION);
-
+    db.execSQL("DROP TABLE IF EXISTS " + TABLE_REMINDER);
     // Create tables again
     onCreate(db);
   }
@@ -97,5 +116,58 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     cursor.close();
     // return count
     return count;
+  }
+  public void addReminder(Reminder reminder){
+    SQLiteDatabase db = this.getWritableDatabase();
+
+    ContentValues values = new ContentValues();
+
+    values.put(KEY_REM_TITLE, reminder.getTitle());
+    values.put(KEY_REM_MESSAGE, reminder.getMessage());
+    values.put(KEY_REM_DATE, reminder.getDate());
+    values.put(KEY_REM_TIME, reminder.getTime());
+       // Inserting Row
+    db.insert(TABLE_REMINDER, null, values);
+    db.close();
+  }
+  public int getReminderCount() {
+    String countQuery = "SELECT  * FROM " + TABLE_REMINDER;
+    SQLiteDatabase db = this.getReadableDatabase();
+    Cursor cursor = db.rawQuery(countQuery, null);
+    int count=cursor.getCount();
+    cursor.close();
+    // return count
+    return count;
+  }
+  public void deleteReminder(int id) {
+    SQLiteDatabase db = this.getWritableDatabase();
+    db.delete(TABLE_REMINDER, KEY_ID + " = ?",
+        new String[] { String.valueOf(id) });
+    db.close();
+  }
+  public List<Reminder> getAllReminders() {
+    List<Reminder> contactList = new ArrayList<>();
+    // Select All Query
+    String selectQuery = "SELECT  * FROM " + TABLE_REMINDER;
+
+    SQLiteDatabase db = this.getWritableDatabase();
+    Cursor cursor = db.rawQuery(selectQuery, null);
+
+    // looping through all rows and adding to list
+    if (cursor.moveToFirst()) {
+      do {
+        Reminder reminder=new Reminder();
+        reminder.setId(Integer.parseInt(cursor.getString(0)));
+        reminder.setTitle(cursor.getString(1));
+        reminder.setMessage(cursor.getString(2));
+        reminder.setDate(cursor.getString(3));
+        reminder.setTime(cursor.getString(4));
+        // Adding contact to list
+        contactList.add(reminder);
+      } while (cursor.moveToNext());
+    }
+
+    // return contact list
+    return contactList;
   }
 }
