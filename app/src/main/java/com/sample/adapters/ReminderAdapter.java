@@ -33,11 +33,13 @@ public class ReminderAdapter extends ArrayAdapter<Reminder> {
     TextView textMessage = (TextView) rowView.findViewById(R.id.txt_reminder_message);
     TextView textDate = (TextView) rowView.findViewById(R.id.txt_reminder_date);
     TextView textTime = (TextView) rowView.findViewById(R.id.txt_reminder_time);
+    TextView textid = (TextView) rowView.findViewById(R.id.txt_reminderid);
     Reminder reminder = reminders.get(position);
     textTile.setText("Tite : "+reminder.getTitle());
     textMessage.setText("Message : "+reminder.getMessage());
     textDate.setText("Date : "+reminder.getDate());
     textTime.setText("Time : "+reminder.getTime());
+    textid.setText(String.valueOf(reminder.getId()));
     return rowView;
   }
 }
