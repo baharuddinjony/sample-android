@@ -2,6 +2,8 @@
   <string name="app_name">Sample-Android</string>
   <string name="welcome_text">Are You Doctor or Pregnent Woman?</string>
   <string name="your_status">Your status</string>
+  <!--<string name="google_maps_key">AIzaSyCWRV_fGB2J8YSaxZJzzZbDz-xcLf5vSFg</string>-->
+  <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDStcqSZiaoaCN9OtZoeWmSRg6s5fFZwZw</string>
   <string name="two">It’s a potentially life-changing week. You will ovulate and it egg meets sperm. You will be on your way to pregnancy.</string>
   <string name="three">Your baby is a tiny ball_ called a blastocyst _ made up of several hundred cells that are multiplying quickly.</string>
   <string name="four">Deep in your uterus, your baby is an embryo made up of two layers and your primitive placenta is developing.</string>
