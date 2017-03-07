@@ -118,10 +118,11 @@ public class WomanRegistrationActivity extends AppCompatActivity {
     womanRegistration.setMobile(mMobile.getText().toString());
     womanRegistration.setLmpDate(mLmpDate.getText().toString());
     womanRegistration.setDueDate(mDueDate.getText().toString());
-    womanRegistration.setPrePregnancyWeight(Float.parseFloat(mWeight.getText().toString()));
-    womanRegistration.setPrePregnancyHeight(Integer.parseInt(mHeight.getText().toString()));
+    womanRegistration.setPrePregnancyWeight(Float.parseFloat(
+        mWeight.getText().toString().equals("") ? "0" : mWeight.getText().toString()));
+    womanRegistration.setPrePregnancyHeight(Integer.parseInt(mHeight.getText().toString().equals("") ? "0" : mHeight.getText().toString()));
     db.addWoman(womanRegistration);
-    Intent intent=new Intent(getApplicationContext(),WomanActivity.class);
+    Intent intent = new Intent(getApplicationContext(), WomanActivity.class);
     startActivity(intent);
   }
 
