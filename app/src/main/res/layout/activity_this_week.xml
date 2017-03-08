@@ -16,10 +16,32 @@
       android:textStyle="bold"
       />
   <ImageView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:src="@drawable/woman"
+      android:layout_gravity="center"
+      android:id="@+id/img_week"
+      android:paddingTop="20dp"
+      />
+  <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:src="@drawable/woman"
-      android:id="@+id/img_week"
-      android:paddingTop="30dp"
-      />
+      android:orientation="horizontal"
+      >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_previous"
+        android:text="Previous"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_next"
+        android:text="Next"
+        android:layout_marginLeft="200dp"
+        />
+
+  </LinearLayout>
+
 </LinearLayout>
