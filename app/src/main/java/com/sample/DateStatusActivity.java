@@ -34,7 +34,7 @@ public class DateStatusActivity extends AppCompatActivity {
     ButterKnife.bind(this);
     db = new DatabaseHelper(this);
     dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-    WomanRegistration reg = db.getRegistration(1);
+    WomanRegistration reg = db.getRegistration();
     mDueDate.setText(mDueDate.getText() + reg.getDueDate());
     mLmpDate.setText(mLmpDate.getText() + reg.getLmpDate());
     //Date pDate=null;

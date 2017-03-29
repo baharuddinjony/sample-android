@@ -33,7 +33,7 @@ public class WeightStatusActivity extends AppCompatActivity {
     ButterKnife.bind(this);
     db = new DatabaseHelper(this);
     dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-    reg = db.getRegistration(1);
+    reg = db.getRegistration();
   }
 
   @OnClick(R.id.btn_weight_calculate) public void calculateWeight() {

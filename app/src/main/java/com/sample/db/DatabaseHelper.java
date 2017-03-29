@@ -143,7 +143,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     return count;
   }
 
-  public WomanRegistration getRegistration(int id) {
+  public WomanRegistration getRegistration() {
     String countQuery = "SELECT  * FROM " + TABLE_REGISTRATION ;
     SQLiteDatabase db = this.getReadableDatabase();
     Cursor cursor = db.rawQuery(countQuery, null);
