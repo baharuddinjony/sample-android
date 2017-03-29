@@ -38,7 +38,8 @@ public class OtherActivity extends AppCompatActivity {
     startActivity(intent);
   }
   @OnClick(R.id.btn_others_change_data) public void changeData() {
-    Intent intent = new Intent(this, ChangeDataActivity.class);
+    Intent intent = new Intent(this, WomanRegistrationActivity.class);
+    intent.putExtra("key",true);
     startActivity(intent);
   }
   @OnClick(R.id.btn_others_help) public void others() {

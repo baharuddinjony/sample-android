@@ -49,6 +49,8 @@ public class WomanRegistrationActivity extends AppCompatActivity {
   @BindArray(R.array.dhaka_distric) String[] mDhakaDistricts;
   @BindArray(R.array.ctg_distric) String[] mCtgDistricts;
   private DatabaseHelper db;
+  boolean isEdit = false;
+  private WomanRegistration womanRegistration = null;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -57,6 +59,28 @@ public class WomanRegistrationActivity extends AppCompatActivity {
     mLmpDate = (Button) findViewById(R.id.btn_woman_lmp_date);
     mDueDate = (Button) findViewById(R.id.btn_woman_due_date);
     db = new DatabaseHelper(this);
+    extractBundle();
+  }
+
+  private void extractBundle() {
+    if (getIntent().getExtras() != null) {
+      isEdit = getIntent().getExtras().getBoolean("key");
+      if (isEdit) {
+        womanRegistration = db.getRegistration();
+        mFullName.setText(womanRegistration.getFullName());
+        mDivision.setSelection(0);
+        mDistrict.setSelection(0);
+        mUnion.setText(womanRegistration.getUnion());
+        mOpazilla.setText(womanRegistration.getOpazila());
+        mMobile.setText(womanRegistration.getMobile());
+        mLmpDate.setText(womanRegistration.getLmpDate());
+        mDueDate.setText(womanRegistration.getDueDate());
+        mWeight.setText(String.valueOf(womanRegistration.getPrePregnancyWeight()));
+        mHeight.setText(String.valueOf(womanRegistration.getPrePregnancyHeight()));
+      }
+    }else {
+      womanRegistration = new WomanRegistration();
+    }
   }
 
   @Override protected void onStart() {
@@ -109,7 +133,7 @@ public class WomanRegistrationActivity extends AppCompatActivity {
   }
 
   @OnClick(R.id.btn_woman_save) public void save() {
-    WomanRegistration womanRegistration = new WomanRegistration();
+
     womanRegistration.setFullName(mFullName.getText().toString());
     womanRegistration.setDivision(mDivision.getSelectedItem().toString());
     womanRegistration.setDistrict(mDistrict.getSelectedItem().toString());
@@ -120,8 +144,14 @@ public class WomanRegistrationActivity extends AppCompatActivity {
     womanRegistration.setDueDate(mDueDate.getText().toString());
     womanRegistration.setPrePregnancyWeight(Float.parseFloat(
         mWeight.getText().toString().equals("") ? "0" : mWeight.getText().toString()));
-    womanRegistration.setPrePregnancyHeight(Integer.parseInt(mHeight.getText().toString().equals("") ? "0" : mHeight.getText().toString()));
-    db.addWoman(womanRegistration);
+    womanRegistration.setPrePregnancyHeight(Integer.parseInt(
+        mHeight.getText().toString().equals("") ? "0" : mHeight.getText().toString()));
+    if (isEdit) {
+      db.updateWoman(womanRegistration);
+    } else {
+      db.addWoman(womanRegistration);
+    }
+
     Intent intent = new Intent(getApplicationContext(), WomanActivity.class);
     startActivity(intent);
   }

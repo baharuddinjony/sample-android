@@ -132,7 +132,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     db.insert(TABLE_REGISTRATION, null, values);
     db.close();
   }
+  public void updateWoman(WomanRegistration womanRegistration) {
+    SQLiteDatabase db = this.getWritableDatabase();
 
+    ContentValues values = new ContentValues();
+    values.put(KEY_ID, womanRegistration.getId());
+    values.put(KEY_NAME, womanRegistration.getFullName());
+    values.put(KEY_DIVISION, womanRegistration.getDivision());
+    values.put(KEY_DISTRICT, womanRegistration.getDistrict());
+    values.put(KEY_OPAZILA, womanRegistration.getOpazila());
+    values.put(KEY_UNION, womanRegistration.getUnion());
+    values.put(KEY_MOBILE, womanRegistration.getMobile());
+    values.put(KEY_LAP, womanRegistration.getLmpDate());
+    values.put(KEY_DUE, womanRegistration.getDueDate());
+    values.put(KEY_CYCLE, womanRegistration.getCycleDays());
+    values.put(KEY_OVULATION, womanRegistration.getOvulationDays());
+    values.put(KEY_WEIGHT, womanRegistration.getPrePregnancyWeight());
+    values.put(KEY_HEIGHT, womanRegistration.getPrePregnancyHeight());
+    // Inserting Row
+    db.update(TABLE_REGISTRATION,values,"id="+womanRegistration.getId(),null);
+    db.close();
+  }
   public int getRegistrationCount() {
     String countQuery = "SELECT  * FROM " + TABLE_REGISTRATION;
     SQLiteDatabase db = this.getReadableDatabase();
