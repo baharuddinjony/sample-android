@@ -4,14 +4,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt_weight_input"
+    android:hint="Enter Current Weight"
+    />
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/btn_weight_calculate"
+      android:text="Calculate"
+      />
   <TextView
       android:id="@+id/txt_weight_status"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:gravity="center"
       android:paddingTop="30dp"
-      android:text="Body Mass Index \n\n Wait Gain for Week 40\n 58.3(55.7-61.1)\nWeight during your delivery\n(55.7-61.1)\n you are under weight"
+      android:text="Weight status will be shown here"
       android:textSize="20sp"
       android:textStyle="bold"
       />
