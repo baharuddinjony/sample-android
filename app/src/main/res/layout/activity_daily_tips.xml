@@ -4,16 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
   <TextView
-      android:id="@+id/txt_date_status"
+      android:id="@+id/txt_weekly_tips"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:gravity="left"
       android:paddingTop="10dp"
-      android:text="Daily Tips"
+      android:text="Weekly Tips"
       android:textSize="30sp"
       />
   <TextView
-      android:id="@+id/txt_date_due_date"
+      android:id="@+id/txt_weekly_tips_details"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:gravity="left"
