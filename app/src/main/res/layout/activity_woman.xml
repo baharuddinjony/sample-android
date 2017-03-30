@@ -68,7 +68,7 @@
         android:layout_height="50dp"
         android:drawableRight="@drawable/down_arrow"
         android:id="@+id/txt_daily_tips"
-        android:text="Daily Tips"
+        android:text="Weekly Tips"
         style="@android:style/Widget.Button"
         >
     </TextView>
