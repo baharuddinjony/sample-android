@@ -1,7 +1,9 @@
 package com.sample;
 
+import android.app.AlarmManager;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,12 +14,16 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
+import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.sample.db.DatabaseHelper;
 import com.sample.models.Reminder;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by User on 2/14/2017.
@@ -58,9 +64,33 @@ public class DialogeReminderActivity extends AppCompatActivity {
     reminder.setDate(mReminderDate.getText().toString());
     reminder.setTime(mReminderTime.getText().toString());
     databaseHelper.addReminder(reminder);
+    setAlarm();
     Intent intent = new Intent();
     setResult(NotificationActivity.REMIDER_REQUEST_CODE, intent);
     finish();
+  }
+
+  private void setAlarm() {
+    SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+    Intent intent = new Intent(this, MyBroadcastReceiver.class);
+    intent.putExtra("name",mReminderTitle.getText().toString());
+    intent.putExtra("details",mReminderDetails.getText().toString());
+    PendingIntent pendingIntent =
+        PendingIntent.getBroadcast(this.getApplicationContext(), 234324243, intent, 0);
+    String dateWithTime=mReminderDate.getText().toString()+" "+mReminderTime.getText().toString();
+    Date d=null;
+    try {
+      d=dateFormat.parse(dateWithTime);
+
+    } catch (ParseException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+    alarmManager.set(AlarmManager.RTC_WAKEUP, d.getTime(),
+        pendingIntent);
+
+    Toast.makeText(this, "Alarm set in " + dateWithTime , Toast.LENGTH_LONG).show();
   }
 
   public static class ReminderDatePickerFragment extends DialogFragment
@@ -81,11 +111,11 @@ public class DialogeReminderActivity extends AppCompatActivity {
       mReminderDate.setText(day + "/" + (month + 1) + "/" + year);
     }
   }
+
   public static class TimePickerFragment extends DialogFragment
       implements TimePickerDialog.OnTimeSetListener {
 
-    @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
+    @Override public Dialog onCreateDialog(Bundle savedInstanceState) {
       // Use the current time as the default values for the picker
       final Calendar c = Calendar.getInstance();
       int hour = c.get(Calendar.HOUR_OF_DAY);
@@ -97,7 +127,7 @@ public class DialogeReminderActivity extends AppCompatActivity {
     }
 
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-      mReminderTime.setText(hourOfDay+":"+minute);
+      mReminderTime.setText(hourOfDay + ":" + minute);
     }
   }
 }
