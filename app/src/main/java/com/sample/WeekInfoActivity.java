@@ -208,6 +208,10 @@ public class WeekInfoActivity extends AppCompatActivity {
         mThisWeek.setText("This is week "+counter);
         mThisWeekDetails.setText(getResources().getString(R.string.wfourty_one));
         break;
+      case 42:
+        mThisWeek.setText("This is week "+counter);
+        mThisWeekDetails.setText(getResources().getString(R.string.wfourty_two));
+        break;
       default:
         mThisWeek.setText("This is first week");
         mThisWeekDetails.setText(getResources().getString(R.string.wone));

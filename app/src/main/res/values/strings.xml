@@ -51,89 +51,232 @@ pre eclampsia.
   <string name="fourty">Your baby is the size of a small pumpkin. Don’t worry if you are still pregnant.  It’s common to go past your due date.</string>
   <string name="fourty_one">As cozy as he is, your baby can’t stay inside you much longer. You will go into labor or be induced soon. </string>
 
-  <string name="wone"></string>
-  <string name="wtwo"></string>
-  <string name="wthree"></string>
-  <string name="wfour"></string>
-  <string name="wfive"></string>
-  <string name="wsix"></string>
-  <string name="wseven"> </string>
-  <string name="weight"></string>
-  <string name="wnine"></string>
-  <string name="wten"></string>
-  <string name="weleven"></string>
-  <string name="wtwelve"></string>
-  <string name="wthirteen"></string>
-  <string name="wfourteen"></string>
-  <string name="wfifteen"></string>
-  <string name="wsixteen"></string>
-  <string name="wseventeen"></string>
-  <string name="weightteen"></string>
-  <string name="wnineteen"></string>
-  <string name="wtwenty"></string>
-  <string name="wtwenty_one"></string>
-  <string name="wtwenty_two"></string>
-  <string name="wtwenty_three"></string>
-  <string name="wtwenty_four"></string>
-  <string name="wtwenty_five"></string>
-  <string name="wtwenty_six"></string>
-  <string name="wtwenty_seven"></string>
-  <string name="wtwenty_eight"></string>
-  <string name="wtwenty_nine"></string>
-  <string name="wthirty"> </string>
-  <string name="wthirty_one"></string>
-  <string name="wthirty_two"></string>
-  <string name="wthirty_three"></string>
-  <string name="wthirty_four"></string>
-  <string name="wthirty_five"></string>
-  <string name="wthirty_six"></string>
-  <string name="wthirty_seven"></string>
-  <string name="wthirty_eight"></string>
-  <string name="wthirty_nine"></string>
-  <string name="wfourty"></string>
-  <string name="wfourty_one"></string>
+  <string name="wone">The question that most often follows "Am I really pregnant?" is "When is my baby due?". You will start experiencing true pregnancy symptoms at 10 to 14 days after ovulation.</string>
+  <string name="wtwo">The question that most often follows "Am I really pregnant?" is "When is my baby due?". You will start experiencing true pregnancy symptoms at 10 to 14 days after ovulation.</string>
+  <string name="wthree">Dramatic changes are taking place inside your womb. Your partner"s sperm has fertilized an egg, and conception has taken place. The embryo starts burrowing into your uterine wall.</string>
+  <string name="wfour">Light spotting can also be normal, and it"s due to implantation bleeding. The spotting is typically pink or light brown. It should never be heavy.</string>
+  <string name="wfive">Week info-The gestational sac and baby can be detected at 5 weeks after your last menstrual period by a transvaginal ultrasound. The gestational sac and baby only measures 5 mm.</string>
+  <string name="wsix">Are you experiencing early pregnancy symptoms yet? Maybe a slight twinge of nausea. Don"t worry if you haven"t noticed any change yet. A lack of symptoms does not mean that anything is wrong.</string>
+  <string name="wseven"> Granted, it"s hard to focus on other people"s feelings right now -- what with having to tend to your own tummy issues -- but there"s a rather selfless question you"ll want to ponder: How is your partner taking all of this? Some partners are super-supportive and ecstatic, while others may feel overwhelmed by the slew of changes taking place. It"s perfectly normal for yours to suddenly obsess over the family finances or fixate on the idea of moving to a bigger home. (Just call it the male version of the nesting instinct.) Chat up your guy to feel out any of his worries or concerns. Goodness knows you"re going to be counting on him to do the same for you.</string>
+  <string name="weight">Do something for yourself this week! It"s easy to put all the focus on your baby these days -- and friends and family are probably doing the same thing. Indulge in some Me time before your baby arrives -- get a pedicure, immerse yourself in a good book. Consider it part of your mama-to-be job to treat yourself. (Anything stress-relieving is good for you and baby, right?) No matter what, don"t feel guilty about these occasional indulgences. If they make you feel good, they"re totally worth it</string>
+  <string name="wnine">Start thinking about what you would do if your doctor suggests any sort of genetic test like CVS or amnio. They can bring up a round of questions. First, of course, is whether the benefits of having the test outweigh the possible health risks. It may take a long talk with your doctor or genetic counselor and plenty of mental wrangling on your own to decide. Other things for you and your partner to consider: Would you end your pregnancy if you discovered that your baby had a serious birth defect? If not, would it help to have this information in advance so you can prepare for a child with special needs? Odds are you"ll never need to act on the answers to these questions (90 to 95 percent of pregnancies result in the safe delivery of healthy babies), but you may decide you"re better off being prepared than caught off guard.</string>
+  <string name="wten">You"ll finally get a peek at your baby this week! Your upcoming prenatal visit will include your first ultrasound. Your doctor will be able to point out fingers and toes, and you"ll hear your baby"s heartbeat. At this time, you may also need a nuchal translucency test, which can assess risks of Down syndrome, other chromosome abnormalities, and congenital heart problems.</string>
+  <string name="weleven">Hello, cleavage! Spurred by the hormones progesterone and estrogen, your breasts (and the milk-producing glands inside them) may soon strain the buttons of your blouse. In fact, it may soon be time to shop for new bras. If you plan to breastfeed, we suggest heading straight to the nursing section. You"ll need the easy access after the baby arrives, so you"ll get more wear out nursing bras than you would regular maternity bras.</string>
+  <string name="wtwelve">Many couples decide to break the news around the end of the first trimester. If you"re not ready to spread the word yet, start thinking about how you"ll spill the beans and get ready to tell your boss that you"re pregnant. Handle it like any other important discussion: Set up a one-on-one -- and be prepared. Know your company"s maternity leave policy beforehand. Reassure her that you"ll be on top of things until you leave, that you"ll help train whoever will be taking over your responsibilities, if possible, and that you"ll be back at your desk before she knows it. Whatever you do, don"t apologize or feel guilty for taking the time off that you deserve.</string>
+  <string name="wthirteen">Don"t forget to keep up with your regular dental checkups. According to the Mayo Clinic, about 80 percent of expectant mamas suffer from gum softening or bleeding.</string>
+  <string name="wfourteen">Now that you"re regaining energy; take the opportunity to fit in exercise. Light-to-moderate exercise, if your doctor approves, can actually help your growing baby (it boosts circulation so she gets oxygen more quickly), and it can even cut down on many of those annoying pregnancy side effects such as varicose veins, backaches, bloating, and swelling. For healthy, active women, the American College of Obstetricians and Gynecologists recommends aiming for 30 minutes of moderate exercise (that means taking a walk, not training for a triathlon) on most, if not all days of the week.</string>
+  <string name="wfifteen">Along with being known as the "feel good" trimester, trimester two is also considered the sexiest. Some women experience a boost in libido due to a hormonal change, and increased blood flow can also rev up arousal and improve orgasms. So unless your doctor has advised you against it, go ahead and indulge -- it"s perfectly safe for your baby-to-be.</string>
+  <string name="wsixteen">Even if you didn"t experience constipation in the first trimester, you could experience it now as the hormone progesterone relaxes smooth muscle tissue throughout your body including your gastrointestinal tract which slows down digestion and also leads to gas, bloating, and burping. In fact, constipation affects about half of all pregnant women. Laxative pills or mineral oils aren"t a good idea during pregnancy, but lots of fluids and fiber can help. To help remedy your stomach woes, it"s a good idea to cut back on foods that make gas worse, such as beans, cabbage, and dairy products.</string>
+  <string name="wseventeen">Wondering whether it"s safe to eat fish? Your baby-to-be can benefit big-time from brain-boosting omega-3-rich fishes such as salmon. But some varieties should be avoided due to high levels of mercury, a pollutant that can affect baby"s developing brain and nervous system. For this reason, the Food and Drug Administration (FDA) and the Environmental Protection Agency (EPA) advise pregnant women not to eat swordfish, shark, king mackerel, and tilefish. In fact, most types of fish contain traces of mercury, so you"ll want to limit your weekly consumption of safer varieties, too. According to the newest guidelines from the FDA, you can enjoy up to 12 ounces a week (roughly two average meals) of lower-mercury fish such as salmon, catfish, Pollock, shrimp, and canned light tuna. Of those 12 ounces, only 6 should come from canned albacore tuna, chunk white tuna, and tuna steak combined, which tends to contain more mercury than light tuna. If you"re eating fish caught in local waters, check online with your state"s department of health for advisories.</string>
+  <string name="weightteen">Unfortunately, hemorrhoids are a common occurrence during pregnancy. The varicose veins in your rectum can swell up and cause discomfort. If you have them, talk to your doctor about over-the-counter hemorrhoid creams that might bring relief. And to keep them at bay, be sure to drink plenty of fluids, combat constipation with added fiber, and avoid straining when you go to the bathroom.</string>
+  <string name="wnineteen">Pay attention when you pee, since moms-to-be are at an increased risk of developing urinary tract infections (UTIs). These occur when bacteria builds up in your bladder, which is more likely to happen now because of hormonal changes. If you find yourself urinating much more often than usual or if it burns when you do, call your doctor. A dose of antibiotics should nip symptoms in the bud. Know you"re prone to UTIs? Start sipping a daily glass of pure unsweetened cranberry juice; it contains bacteria-fighting compounds that may help head off infections.</string>
+  <string name="wtwenty">Wacky, scary, vivid, and unsettling dreams are all totally normal during pregnancy. These dreams may be spurred by anxieties you have about motherhood or labor, along with insomnia, or trouble falling asleep. You can let your imagination run wild with these nightmares... or you can take a deep breath when you wake up and talk about your dreams with your partner or friends. If you rationalize your fears as they"re surfacing in your subconscious, you can let go of some of your worries.</string>
+  <string name="wtwenty_one">Feeling stressed? Be sure to take time to unwind, get enough sleep and fit regular exercise into your schedule now. Chronic high levels of stress and anxiety can have adverse effects on your pregnancy, including premature birth and low birth weight. Don"t get too worried about worrying, though. Major life events such as a death in the family are more likely to have an impact on the baby than, say, getting stuck in traffic.</string>
+  <string name="wtwenty_two">Tired of taking a back seat to your bump? The days of chatting about yourself or your favorite TV shows may seem long gone. Now all your friends want to talk about is your due date, the nursery, and baby names. If you"re sick of dishing about your pregnancy, have a few hot conversation topics ready for your next dinner party.</string>
+  <string name="wtwenty_three">If upper back pain is your biggest complaint, you may be able to solve the problem with a new, more supportive bra. Some women have trouble adapting to the weight of growing breasts.</string>
+  <string name="wtwenty_four">Sleeping may be tough now and chances are it"ll only get tougher as your belly grows. If you"re struggling with insomnia, experiment with a few natural sleep remedies such as meditation, hot milk before bed, or with your doctor"s okay, more exercise during the day to wear yourself out by bedtime.</string>
+  <string name="wtwenty_five">Ease heartburn symptoms by tweaking the foods you eat and how you eat them. Stick to five or six smaller meals instead of three large ones -- less food in your tummy makes it easier to digest. Avoid fatty, fried foods, which take longer to break down, as well as things that are spicy, citrusy, or carbonated. Try to drink between meals instead of during them to avoid overloading your stomach. And stop eating a few hours before bed to prevent indigestion during sleep. If none of these strategies eases the discomfort, talk to your doctor about taking an over-the-counter remedy. Antacids are generally safe for pregnant women, and some brands (such as Tums) deliver an extra calcium boost.</string>
+  <string name="wtwenty_six">Ease heartburn symptoms by tweaking the foods you eat and how you eat them. Stick to five or six smaller meals instead of three large ones -- less food in your tummy makes it easier to digest. Avoid fatty, fried foods, which take longer to break down, as well as things that are spicy, citrusy, or carbonated. Try to drink between meals instead of during them to avoid overloading your stomach. And stop eating a few hours before bed to prevent indigestion during sleep. If none of these strategies eases the discomfort, talk to your doctor about taking an over-the-counter remedy. Antacids are generally safe for pregnant women, and some brands (such as Tums) deliver an extra calcium boost.</string>
+  <string name="wtwenty_seven">If your ever-growing bump is starting to get in the way of your fitness routine, take your workout to the pool. A big belly can make jogging or aerobics uncomfortable, but swimming will likely feel soothing as you move weightlessly through the water.</string>
+  <string name="wtwenty_eight">Prepare for the unexpected. Even though you"ve written your birth plan and have a vision of how your labor will go, very few deliveries are perfect. Knowing the signs of pre-term labor can help alleviate some of the anxiety associated with delivering early.</string>
+  <string name="wtwenty_nine">Do you know who"ll be in your labor room? Some women decide to hire a doula to help support them during labor. More cheerleader than doctor, your doula"s there to encourage you no matter what, though she won"t actually deliver your baby. Many will also offer postpartum care (help with breastfeeding, swaddling, diaper-changing, and all those other baby basics that definitely take some time to master), which many new moms say is invaluable. Interested? Check out DONA International (www.dona.org) or the International Birth  Wellness Project (www.alace.org) for more info and to find one near you.</string>
+  <string name="wthirty"> If you tap on your belly, your baby may kick or poke back at the same spot you touched. So neat -- you can play with your baby well before he"s born! When he kicks, try rubbing your tummy and talking softly or singing -- you might just find that it calms him down.</string>
+  <string name="wthirty_one">Strangers on the subway reach out and touch your belly. A woman at the grocery store wrongly warns you against having sex ("It will make you go into early labor!"). Your neighbor asks if you"re planning on circumcising your little boy (and clearly has strong opinions on the subject). Sound familiar? Now that your belly is front and center, chances are it"ll attract a lot of attention and unwanted pregnancy advice. Just laugh it off and try not to let the comments worry or sway you. Your opinion and your doctor"s are the only ones that matter; simply deem the rest amusing distractions.</string>
+  <string name="wthirty_two">As your due date approaches, it"s a good idea to learn the signs of early labor, just in case. These include your water breaking (which could result in a gush of fluid or just a trickle), not-too-painful tightening of the uterus, period-like cramps, vaginal bleeding, increased pressure in the pelvic area, and diarrhea. With the exception of your water clearly breaking, don"t worry too much if you experience one of these symptoms, since they don"t always result in premature labor. But, to be on the safe side, do let your doctor know of your symptoms.</string>
+  <string name="wthirty_three">Nervous about working right up until your due date? Propose working from home a day or two during the last few weeks prior to taking off. It will help you ease into your leave without eating into your actual sanctioned time off. Oh, and don"t forget to factor in any remaining vacation or sick days when you sit down with the calendar to hammer out your exit strategy; many companies will let you count them toward your time off.</string>
+  <string name="wthirty_four">Can"t sleep? Regular exercise can help you snooze more soundly, so schedule a daily neighborhood stroll. Buy a body pillow to snuggle up to for extra support when you"re side-sleeping. If heartburn"s your big sleep stealer, try eating an earlier dinner -- minus heartburn triggers likes spicy, citrus, or carbonated food and drink of course. And you"ll cut down on those six-times-a-night bathroom runs if you nix the water guzzling for at least an hour or two before you go to bed.</string>
+  <string name="wthirty_five">If you have a dog or cat, you"ll need to help it adjust to the baby. You can try taking a new baby blanket to the hospital. Wrap your baby in it for a few hours so it has his scent. Then have your partner bring it home to let the dog get used to the baby"s scent before you and Baby come home from the hospital. You"ll also want to make sure your pets are up-to-date with vaccinations. And if your pet has picked up some bad habits, like biting or pouncing, use this time to break him of these habits before the baby arrives.</string>
+  <string name="wthirty_six">You"ve probably been wondering how you will know when it"s actually, really, truly time. When you feel light twinges or cramps that are regular and strong and coming every four to five minutes for one to two hours, call your doctor. Another signal is a painless leaking of fluid -- it means your water broke (actually your amniotic sac rupturing). Even if you don"t start having contractions immediately, your baby will need to be delivered in the next 12 to 24 hours to reduce the chance of infection.</string>
+  <string name="wthirty_seven">Your baby could arrive any day now. Exciting, sure. Terrifying? Yes, definitely. But no matter how scared you might be, you"re way better off knowing as much as you can about D-day. So remember: No one knows exactly what sets off the big event, but somehow your body knows when your baby"s fully cooked, so it starts releasing chemicals (called prostaglandins) that thin, soften, and dilate your cervix. When produced in large amounts, these prostaglandins will trigger your uterus to start contracting, or making involuntary muscle movements to push your baby down and out. (At some point, your water will break, too, but this is more like a side effect of labor than an actual trigger.)</string>
+  <string name="wthirty_eight">Many moms-to-be may find themselves in full-on nesting mode right now. Cleaning and straightening up is a great way to stay busy during the end-of-pregnancy waiting game, but make sure you don"t overdo it -- hello, you"re nine months pregnant! Save up some of that energy -- you"re gonna need it for labor!</string>
+  <string name="wthirty_nine">Even if you"ve been imagining for months how your labor will go, chances are it won"t go anything like you"ve planned. For example, your water might break, but if you"re not having any contractions, you might need to be induced. Or maybe your labor will progress so fast that there"ll be no time for an epidural, even though you were planning on getting one as soon as you set foot in the hospital. Be prepared to go with whatever unfolds. And know that even if you do experience a little delivery-day drama it will all become a cherished and oft-recounted part of your baby"s birth story.</string>
+  <string name="wfourty">Once you get to the hospital, a doctor will check things out down there to see how much your cervix has dilated. Once you reach 3 or 4 centimeters, you"ll likely be offered an epidural to help manage the pain. (According to the many women who swear by them, the needle prick of the local anesthetic going in before they give you the epidural may be the most painful part of your entire labor.) Or, you may be set on delivering drug-free. No matter what you"ve planned or imagined, it"s perfectly fine to change your mind at the last minute. It happens a lot!</string>
+  <string name="wfourty_one">When you think about what labor and delivery might be like, odds are you"re not exactly fantasizing about having a C-section. (It is major surgery, after all.) So you may feel upset or disappointed if your doctor recommends one -- or seriously freaked if you"re suddenly whisked into the operating room after hours of labor. While it"s completely normal and valid to have these feelings, remember that what matters most isn"t how you deliver your baby, but that he arrives healthy. It might help to discuss all those burning what-ifs with your doctor now, so you"re at least somewhat prepared and know at what point or under what circumstances she"d consider performing one. The more informed you are, the easier your mind will rest.</string>
+  <string name="wfourty_two">Waiting beyond your due date can give you lots of time for thinking and stressing about everything that could go wrong. Keep your mind occupied by reading up on baby care instead. Once baby does decide to make an appearance, you"ll be busy, so you"ll thank yourself if you already know how to give him his first bath, how to prevent cradle cap, and more.</string>
 
-
-  <string name="iwone"></string>
-  <string name="iwtwo"></string>
-  <string name="iwthree"></string>
-  <string name="iwfour"></string>
-  <string name="iwfive"></string>
-  <string name="iwsix"></string>
-  <string name="iwseven"> </string>
-  <string name="iweight"></string>
-  <string name="iwnine"></string>
-  <string name="iwten"></string>
-  <string name="iweleven"></string>
-  <string name="iwtwelve"></string>
-  <string name="iwthirteen"></string>
-  <string name="iwfourteen"></string>
-  <string name="iwfifteen"></string>
-  <string name="iwsixteen"></string>
-  <string name="iwseventeen"></string>
-  <string name="iweightteen"></string>
-  <string name="iwnineteen"></string>
-  <string name="iwtwenty"></string>
-  <string name="iwtwenty_one"></string>
-  <string name="iwtwenty_two"></string>
-  <string name="iwtwenty_three"></string>
-  <string name="iwtwenty_four"></string>
-  <string name="iwtwenty_five"></string>
-  <string name="iwtwenty_six"></string>
-  <string name="iwtwenty_seven"></string>
-  <string name="iwtwenty_eight"></string>
-  <string name="iwtwenty_nine"></string>
-  <string name="iwthirty"> </string>
-  <string name="iwthirty_one"></string>
-  <string name="iwthirty_two"></string>
-  <string name="iwthirty_three"></string>
-  <string name="iwthirty_four"></string>
-  <string name="iwthirty_five"></string>
-  <string name="iwthirty_six"></string>
-  <string name="iwthirty_seven"></string>
-  <string name="iwthirty_eight"></string>
-  <string name="iwthirty_nine"></string>
-  <string name="iwfourty"></string>
-  <string name="iwfourty_one"></string>
-
+  <string name="iwone">Speak with your doctor about adding a prenatal multivitamin to your morning routine. At least 400 micrograms of folic acid every day can help prevent certain birth defects that affect your baby"s brain, heart, and spinal cord, especially if you take it before you conceive and in the early weeks of your pregnancy. See that your supplements contain added goodies like calcium, iron, and Vitamin B12 as well.</string>
+  <string name="iwtwo">Speak with your doctor about adding a prenatal multivitamin to your morning routine. At least 400 micrograms of folic acid every day can help prevent certain birth defects that affect your baby"s brain, heart, and spinal cord, especially if you take it before you conceive and in the early weeks of your pregnancy. See that your supplements contain added goodies like calcium, iron, and Vitamin B12 as well.</string>
+  <string name="iwthree">•	Try new fruits and veggies each week to maximize your intake of vitamins (brightly colored types pack the most nutrition).
+•	Skip empty-calorie snacks in favor of nutrient-packed mini-meals.
+•	Give in to cravings now and again, as long as you aim for healthy fare the rest of the day.
+•	Take prenatal vitamins, preferably at night when iron is best absorbed.
+•	Follow sound food-safety practices: Wash produce well, cook meats thoroughly, and throw away any questionable leftovers.
+•	Fit in plenty of high-fiber foods every day.
+•	Drink at least 8 glasses of fluids per day.
+•	Ask your doctor whether splitting your iron supplement in 2 doses is an option for you
+•	Eat small, frequent meals (6 small meals instead of 3, for example).
+•	Save beverages for after meals.
+•	Avoid reclining or lying down within an hour of eating
+</string>
+  <string name="iwfour">*Tell your partner the news!
+*Make an appointment to see your doctor to confirm your pregnancy.
+*Consider the alternative of a certified nurse-midwife.
+</string>
+  <string name="iwfive">No matter how you"re feeling, remember that getting enough sleep is a sure mood-booster. Eight hours or so of shut-eye can make a world of difference. And right now, you might feel like dozing off all the time -- at work, in front of the TV, in mid-sentence -- thanks to soaring progesterone levels, lower blood sugar, lower blood pressure, and increased blood volume.</string>
+  <string name="iwsix">Having trouble taking prenatal vitamins? Sometimes the oversize pills are tough to swallow if you"re already feeling queasy. Ask your doctor about taking children"s chewable instead, along with a folic acid supplement.</string>
+  <string name="iwseven">* Schedule and prepare for your first prenatal visit, which should happen between 8 and 12 weeks.
+* Compile a list of questions for your first doctor"s appointment.
+* Clear your beauty cabinet of any chemical-laden products like DEET-filled insect repellent.
+* Buy a belly band to extend the life of your pants.
+ </string>
+  <string name="iweight">*Shop for a new bra, whether it"s a maternity bra or just a bigger, softer style.
+*Make Kegel exercises a part of your daily routine.
+*Pick up antacids in preparation for pregnancy heartburn, along with other drugstore staples.
+*Make a dentist appointment.
+*Discuss recommended prenatal tests with your doctor.
+</string>
+  <string name="iwnine">* Create a baby budget.
+* Make a pre-baby to-do list of all the things you want accomplish or enjoy before the baby arrives.
+* Look at your household cleaners and swap in eco-friendly ones for any toxic ones.
+* Eat plenty of fruits and vegetables.
+* Go for a walk, or do 30 minutes of another moderate exercise, and make it a part of your daily routine now.
+</string>
+  <string name="iwten">* Wash your hands frequently to avoid getting a cold or the flu.
+* Try natural remedies for indigestion.
+* Go shopping for maternity clothing.
+* Review your company"s maternity leave policy.
+* If you"re hoping for a V-BAC (vaginal birth after cesarean) but your doctor isn"t on board, consider jumping ship for a practitioner who will consider it.
+</string>
+  <string name="iweleven">*Moisturize your belly, hips and thighs daily to prevent itchy, dry skin as it stretches.
+* Avoid hot tubs, saunas, steam rooms, intense hot-weather workouts, super-hot baths, or anything else that could raise your body temperature above 102 degrees.
+* Get a first-trimester screening to help your practitioner decide what tests may be warranted.
+* If it"s recommended by your doctor, get tested for chromosomal abnormalities through a nuchal translucency (NT) and chorionic villus sampling (CVS).
+* Listen to the baby"s heartbeat with a Doppler at your doctor"s appointment, if possible
+</string>
+  <string name="iwtwelve">*Moisturize your belly, hips and thighs daily to prevent itchy, dry skin as it stretches.
+* Avoid hot tubs, saunas, steam rooms, intense hot-weather workouts, super-hot baths, or anything else that could raise your body temperature above 102 degrees.
+* Get a first-trimester screening to help your practitioner decide what tests may be warranted.
+* If it"s recommended by your doctor, get tested for chromosomal abnormalities through a nuchal translucency (NT) and chorionic villus sampling (CVS).
+* Listen to the baby"s heartbeat with a Doppler at your doctor"s appointment, if possible
+</string>
+  <string name="iwthirteen">* Begin thinking about baby names.
+* Start sleeping on your side.
+* Research pediatricians.
+* Eat smaller meals more frequently to stave off heartburn.
+* Consider borrowing previously worn maternity clothing from friends or family.
+</string>
+  <string name="iwfourteen">* Tell your family and friends your good news if you haven"t already.
+* Break the news to your boss, too.
+* Take advantage of your energy boost by checking things off your to-do list at home and at work.
+* Start taking weekly pictures of your beautiful belly.
+</string>
+  <string name="iwfifteen">* Sign up for a prenatal yoga class.
+* Strengthen your abs with pelvic tilts.
+* Talk to you partner about finding out the sex of your baby.
+* Over 35? Schedule an amniocentesis if it"s recommended.
+</string>
+  <string name="iwsixteen">* Be sure to get plenty of calcium now, from low-fat dairy foods or supplements.
+* Tour local birth centers.
+* Start your baby registry.
+* Ask your mother or grandmother about their birthing experiences.
+</string>
+  <string name="iwseventeen">* Combat your forgetful "pregnancy brain" with lots of notes and reminders.
+* Treat yourself to a prenatal massage.
+* Sign up for a childbirth class.
+* Start a college fund for baby-to-be by opening a 529 account or a special savings account.
+</string>
+  <string name="iweightteen">* Consider signing up for infant CPR, prenatal breastfeeding, or newborn-care classes.</string>
+  <string name="iwnineteen">* Scan your pix from your ultrasound and share them via e-mail and Facebook.
+* Have a date night.
+* Research nursery furniture.
+* Research nursery furniture.
+</string>
+  <string name="iwtwenty">* Talk to your other half about how you"ll handle life after baby.
+* Make sure you have flats or sensible shoes -- not 3-inch heels -- to live in for the next four months.
+* Know the symptoms and risks of preeclampsia.
+</string>
+  <string name="iwtwenty_one">* Research the pros and cons of breastfeeding. Decide what"s best for you and your baby once you have all the facts.
+* Get organized and tackle pending projects around the house.
+</string>
+  <string name="iwtwenty_two">* Work with your gracious baby shower host to plan party logistics.
+* Now that you know the sex of the baby, take a second look at baby names.
+* Prevent varicose veins. Avoid crossing your legs and long periods of sitting or standing, which may result in blood pooled in the legs.
+</string>
+  <string name="iwtwenty_three">* Go shopping for more maternity clothes.
+* As you think about the baby"s first name, don"t forget to consider what last name he will take.
+* Test your carbon monoxide and smoke detectors.
+</string>
+  <string name="iwtwenty_four">* Look into childcare options if you"re planning to return to work.
+* Start planning the nursery.
+* Get tested for gestational diabetes.
+</string>
+  <string name="iwtwenty_five">* Update or attain life and disability insurance, and add chosen guardianship to your will.
+* Write a birth plan.
+* Pre-register at your hospital or birthing center, if possible.
+</string>
+  <string name="iwtwenty_six">* Interview potential pediatricians. Find out which local doctors are covered by your insurance and seek recommendations.
+* Do any last-minute travel. It"s best to avoid travel once the third trimester hits.
+* Take the glucose-screening test.
+</string>
+  <string name="iwtwenty_seven">* Choose a color for the nursery.
+* Research cord blood banking.
+</string>
+  <string name="iwtwenty_eight">* Start seeing your doctor or midwife every two weeks.
+* Update your retirement beneficiaries.
+* Baby proof your house.
+* Help your partner to feel the baby"s kicks.
+* If your fingers are swollen, take your rings off and store them in a safe place until after delivery.
+* Depending on your and your partner"s blood types, you may receive an injection of RhoGAM.
+</string>
+  <string name="iwtwenty_nine">* Start shopping for birth announcements and decide whether you"ll choose paper or electronic ones.
+* If you live in an older home, ask your partner to test for lead-based paint in the nursery and remove it if necessary.
+* Eat a high-fiber diet to help prevent constipation and hemorrhoids.
+</string>
+  <string name="iwthirty"> * Count fetal kicks.
+* Pack your hospital bag and one for your partner.
+* Know the signs of premature labor.
+* Try exercises designed to help prepare your body for D-day.
+</string>
+  <string name="iwthirty_one">* Eat foods rich in iron.
+* If you plan to hire a baby nurse, start seeking recommendations.
+* Plan your maternity leave.
+* Prepare a baby first-aid and an emergency kit.
+</string>
+  <string name="iwthirty_two">* Plan care for your other children or your pets for when you go into labor.
+* Get a haircut.
+* Set up the baby"s nursery.
+* Start seeing your doctor or midwife weekly through delivery.
+</string>
+  <string name="iwthirty_three">* Start reading about newborn care.
+* Clean out your car to make room for baby.
+* Install your car seat and visit the National Highway Traffic Safety Administration"s Web site to locate an inspection station near you so you can be sure you did it correctly.
+</string>
+  <string name="iwthirty_four">* Call your insurance company to add you’re baby-to-be to your policy.
+* Get tested for Group B strep (GBS).
+* Buy any items you"ll need for postpartum recovery.
+* Meet with several pediatricians to make your final choice.
+</string>
+  <string name="iwthirty_five">* Buy a baby book.
+* If you plan to try breastfeeding, get the number of a recommended lactation consultant or join a local La Leche League International group.
+* Review your baby registry to see what items you still need to purchase before baby"s arrival.
+</string>
+  <string name="iwthirty_six">* Buy a baby book.
+* If you plan to try breastfeeding, get the number of a recommended lactation consultant or join a local La Leche League International group.
+* Review your baby registry to see what items you still need to purchase before baby"s arrival.
+</string>
+  <string name="iwthirty_seven">* If you have other children, be sure to prepare them for their sibling"s arrival.
+* Plan for your first few weeks with baby by cooking and freezing a few nights" or weeks" worth of dinners.
+* Stock up on diapers and formula.
+* Wash the baby clothes and bedding.
+</string>
+  <string name="iwthirty_eight">* Tie up any loose ends with finances or medical insurance.
+* Make a list of who you want to contact when the baby arrives, including phone numbers and e-mail addresses.
+* Nail down your final choices for baby names.
+</string>
+  <string name="iwthirty_nine">* Practice any relaxation or breathing techniques you"ve learned.
+* Wrap up at work and create a memo for your fill-in, just in case you go into labor before your due date.
+* Discuss with your partner the option of cutting the umbilical cord.
+</string>
+  <string name="iwfourty">* Be ready for your water to break, or for the mucus plug or bloody show.
+* Time your contractions.
+* Buy a few cold packs at the drugstore to use when the perineal cold packs from the hospital run out.
+</string>
+  <string name="iwfourty_one">* Enjoy those last few kicks and the amazing feeling of having your baby inside of you.
+* Do squats to help prepare your body for labor.
+* Take advantage of the extra time to rest.
+</string>
+<string name="iwfourty_two">* Try a few tricks to bring on labor (or at least keep your mind off it) -- eat spicy foods, have sex, take a walk or stimulate your nipples.
+* Have the non-stress test again, or a contraction stress test.
+* Go to the hospital and get induced.
+</string>
 </resources>

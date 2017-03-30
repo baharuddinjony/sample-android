@@ -208,6 +208,10 @@ public class DailyTipsActivity extends AppCompatActivity {
         mThisWeek.setText("This is week "+counter);
         mThisWeekDetails.setText(getResources().getString(R.string.iwfourty_one));
         break;
+      case 42:
+        mThisWeek.setText("This is week "+counter);
+        mThisWeekDetails.setText(getResources().getString(R.string.wfourty_two));
+        break;
       default:
         mThisWeek.setText("This is first week ");
         mThisWeekDetails.setText(getResources().getString(R.string.iwone));
