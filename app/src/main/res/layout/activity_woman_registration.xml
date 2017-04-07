@@ -80,18 +80,15 @@
         android:layout_weight="1"
         android:textSize="18sp" />
 
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spn_woman_upazila"
-        android:layout_alignParentRight="true"
-
-        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+    <TextView
+        android:layout_width="wrap_content"
+        android:hint="@string/enter_union"
+        android:id="@+id/txt_woman_opazila"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/white"
         android:layout_weight="1"
-        style="@style/spinner_style"
-        android:dropDownWidth="300dp"
-        >
-    </Spinner>
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -121,7 +118,7 @@
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:id="@+id/enter_number"
+        android:id="@+id/txt_woman_mobile"
         android:hint="@string/enter_mobilnumber"
         android:textColor="@android:color/black"
         android:maxLines="1"

@@ -13,7 +13,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.sample.adapters.ReminderAdapter_doctor;
-import com.sample.db.DatabaseHelper_Doctor;
 import com.sample.models.Reminder;
 
 import java.util.List;
@@ -25,7 +24,6 @@ import java.util.List;
 public class NotificationActivity_doctor extends AppCompatActivity {
 
     @BindView(R.id.list_reminder_doctor) ListView mDoctorRemiders;
-    private DatabaseHelper_Doctor databaseHelper_Doctor = null;
     private ReminderAdapter_doctor reminderAdapter_doctor = null;
     private List<Reminder> reminders2=null;
 
@@ -35,14 +33,13 @@ public class NotificationActivity_doctor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reminder_doctors);
         ButterKnife.bind(this);
-        databaseHelper_Doctor = new DatabaseHelper_Doctor(this);
         showReminders();
         registerListener();
     }
 
     @OnClick(R.id.btn_set_reminder_doctor) public void reminder() {
-        Intent intent = new Intent(this, DialogeDoctorReminderActivity.class);
-        startActivityForResult(intent, REMIDER_REQUEST_CODE);
+        /*Intent intent = new Intent(this, DialogeDoctorReminderActivity.class);
+        startActivityForResult(intent, REMIDER_REQUEST_CODE);*/
     }
 
     @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -53,9 +50,9 @@ public class NotificationActivity_doctor extends AppCompatActivity {
     }
 
     private void showReminders() {
-        reminders2 = databaseHelper_Doctor.getAllReminders();
+        /*reminders2 = databaseHelper_Doctor.getAllReminders();
         reminderAdapter_doctor = new ReminderAdapter_doctor(this, reminders2);
-        mDoctorRemiders.setAdapter(reminderAdapter_doctor);
+        mDoctorRemiders.setAdapter(reminderAdapter_doctor);*/
     }
     private void registerListener(){
         mDoctorRemiders.setOnItemLongClickListener (new AdapterView.OnItemLongClickListener() {
@@ -70,7 +67,7 @@ public class NotificationActivity_doctor extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         TextView id=(TextView)view.findViewById(R.id.txt_reminderid_doctor);
                         reminders2.remove(position);
-                        databaseHelper_Doctor.deleteDoctorReminder(Integer.parseInt(id.getText().toString()));
+                        /*databaseHelper_Doctor.deleteDoctorReminder(Integer.parseInt(id.getText().toString()));*/
                         reminderAdapter_doctor.notifyDataSetChanged();
                         dialog.dismiss();
 

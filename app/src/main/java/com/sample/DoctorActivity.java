@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.TextView;
 
 
-import com.sample.db.DatabaseHelper_Doctor;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -26,13 +24,13 @@ public class DoctorActivity extends AppCompatActivity {
   @BindView(R.id.Appointment_req) TextView mappointment_req;
   @BindView(R.id.Appointment_list) TextView mappointment_list;
   @BindView(R.id.others_doctor) TextView mother_doctor;
-   DatabaseHelper_Doctor databaseHelper_doctor=null;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_doctor);
     ButterKnife.bind(this);
-    databaseHelper_doctor=new DatabaseHelper_Doctor(getApplicationContext());
+
     checkRegistration2();
   }
 
@@ -61,7 +59,7 @@ public class DoctorActivity extends AppCompatActivity {
 
   private void checkRegistration2() {
 
-    int count2 = databaseHelper_doctor.getRegistrationCount2();
+    int count2 = 0;
     if (count2 > 0) {
       mRegistration2.setVisibility(View.GONE);
 

@@ -45,8 +45,8 @@ public class WomanRegistrationActivity extends AppCompatActivity {
   @BindView(R.id.txt_woman_ovulation) EditText mOvulationDay;
   @BindView(R.id.txt_woman_prepregnancy) EditText mWeight;
   @BindView(R.id.txt_woman_prepregnancy_height) EditText mHeight;
-  @BindArray(R.array.divisions) String[] mDivisions;
-  @BindArray(R.array.dhaka_distric) String[] mDhakaDistricts;
+  @BindArray(R.array.division) String[] mDivisions;
+  @BindArray(R.array.dhaka_district) String[] mDhakaDistricts;
   @BindArray(R.array.ctg_distric) String[] mCtgDistricts;
   private DatabaseHelper db;
   boolean isEdit = false;

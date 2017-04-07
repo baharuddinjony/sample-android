@@ -36,11 +36,11 @@ public class ReminderAdapter_doctor extends ArrayAdapter<Reminder> {
         TextView textTime = (TextView) rowView.findViewById(R.id.txt_reminder_time_doctor);
         TextView textid = (TextView) rowView.findViewById(R.id.txt_reminderid_doctor);
         Reminder reminder2 = reminders2.get(position);
-        textTile.setText("Tite : "+reminder2.getDoctorTitle());
+        /*textTile.setText("Tite : "+reminder2.getDoctorTitle());
         textMessage.setText("Message : "+reminder2.getDoctorMessage());
         textDate.setText("Date : "+reminder2.getDoctorDate());
         textTime.setText("Time : "+reminder2.getDoctorTime());
-        textid.setText(String.valueOf(reminder2.getDoctorId()));
+        textid.setText(String.valueOf(reminder2.getDoctorId()));*/
         return rowView;
     }
 }

@@ -19,14 +19,14 @@
       android:layout_alignParentLeft="true"
       android:layout_alignParentStart="true"
       android:layout_marginTop="33dp"
-      tools:ignore="UselessParent">
+      >
     <TextView
         android:layout_width="fill_parent"
 
         android:text="Registration For User "
         style="@android:style/Widget.Button"
-        tools:ignore="HardcodedText,RtlHardcoded"
-        android:id="@+id/tex_registration"
+
+        android:id="@+id/txt_registration"
         android:textColor="#7F418B"
         android:textSize="18sp"
         android:textStyle="normal|bold"

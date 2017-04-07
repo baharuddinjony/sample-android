@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -14,7 +13,7 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import com.sample.db.DatabaseHelper_Doctor;
+
 import com.sample.models.DoctorRegistration;
 
 
@@ -47,14 +46,14 @@ public class DoctorRegistrationActivity extends AppCompatActivity {
     CheckBox c1;
     CheckBox c2;
 
-    private DatabaseHelper_Doctor db2;
+
 
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_registration);
         ButterKnife.bind(this);
-        db2 = new DatabaseHelper_Doctor(this);
+
         c1 = (CheckBox) findViewById(R.id.checkBox_male);
         c2 = (CheckBox) findViewById(R.id.checkBox_female);
     }
@@ -124,7 +123,6 @@ public class DoctorRegistrationActivity extends AppCompatActivity {
             Toast.makeText(this, "Please Fill All The Field Correctly", Toast.LENGTH_SHORT).show();
         }
 
-        db2.addDoctor(doctorRegistration);
         if (flag2 == 0) {
             Intent intent = new Intent(getApplicationContext(), DoctorActivity.class);
             startActivity(intent);
