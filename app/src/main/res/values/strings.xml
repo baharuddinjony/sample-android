@@ -1,10 +1,75 @@
 <resources>
-  <string name="app_name">Sample-Android</string>
-  <string name="welcome_text">Are You Doctor or Pregnent Woman?</string>
-  <string name="your_status">Your status</string>
-  <!--<string name="google_maps_key">AIzaSyCWRV_fGB2J8YSaxZJzzZbDz-xcLf5vSFg</string>-->
+    <string name="app_name">Save The Mother And Child</string>
+    <string name="welcome_text">Choose The Function</string>
+    <string name="your_status">Your status</string>
+    <!--<string name="google_maps_key">AIzaSyCWRV_fGB2J8YSaxZJzzZbDz-xcLf5vSFg</string>-->
   <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDStcqSZiaoaCN9OtZoeWmSRg6s5fFZwZw</string>
-  <string name="two">It’s a potentially life-changing week. You will ovulate and it egg meets sperm. You will be on your way to pregnancy.</string>
+        <string name="doctor">Doctor</string>
+    <string name="woman">Woman</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_union">Enter Union</string>
+    <string name="pregnant_woman">Pregnant Woman</string>
+    <string name="ovulation_days">Ovulation (days)</string>
+    <string name="pre_pregnanacy_height_in_cm">Pre Pregnanacy Height (in cm)</string>
+    <string name="enter_division">Enter Division</string>
+    <string name="enter_district">Enter District</string>
+    <string name="enter_mobilnumber">Enter Mobile Number</string>
+    <string name="seclect_due_date">Seclect Due Date</string>
+    <string name="enter_date">Enter Due Date </string>
+    <string name="enter_date2">Enter LMP Date</string>
+
+
+    <string name="date_status">Date Status</string>
+    <string name="others">Others</string>
+    <string name="personal_info">Enter Personal Information</string>
+    <string name="name">Name</string>
+    <string name="your_specialisation">Your Specialisation</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="affiliations">Enter Affiliations</string>
+    <string name="enter_hospital_name">Enter Hospital Name</string>
+    <string name="enter_hospital_number">Enter Hospital Number</string>
+    <string name="add_more">Add More</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="all_tips">All Tips</string>
+    <string name="n">........................................................\n....................................</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="reminder_date">Reminder Date</string>
+    <string name="reminder_time">Reminder Time</string>
+    <string name="reminder_details">Reminder details</string>
+    <string name="Save">Save</string>
+    <string name="Appoinment_request">Appointment Request</string>
+    <string name="Appointment_list">Appointment List</string>
+    <string name="set_reminder2">Set Reminder</string>
+    <string name="change_data2">Change Data</string>
+    <string name="help2">Help</string>
+    <string name="others2">Others</string>
+    <string name="switch2">Switch</string>
+    <string name="date">Date :</string>
+    <string name="message">Message :</string>
+    <string name="time">Time :</string>
+    <string name="title">Title :</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delet</string>
+    <string name="set_reminder_user">Set Reminder</string>
+    <string name="reminder_time_user">Reminder Time</string>
+    <string name="reminder_details_user">Reminder details</string>
+    <string name="save_user">Save</string>
+    <string name="set_reminder_doctor">set_reminder_doctpr</string>
+    <string name="enter_weight_kg">Enter weight (kg)</string>
+    <string name="button">Button</string>
+    <string name="calculate_weight_status">Calculate Weight Status</string>
+    <string name="woman1">woman</string>
+    <string name="remaining_time">Remaining Time :</string>
+    <string name="due_date">Due Date :</string>
+    <string name="pregnant_for">Pregnant FOR :</string>
+    <string name="lmp">LMP :</string>
+
+
+
+    <string name="two">It’s a potentially life-changing week. You will ovulate and it egg meets sperm. You will be on your way to pregnancy.</string>
   <string name="three">Your baby is a tiny ball_ called a blastocyst _ made up of several hundred cells that are multiplying quickly.</string>
   <string name="four">Deep in your uterus, your baby is an embryo made up of two layers and your primitive placenta is developing.</string>
   <string name="five">Your tiny embryo is growing like crazy, and you may be noticing pregnancy discomforts like breasts and fatigue.</string>

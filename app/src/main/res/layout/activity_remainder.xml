@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
     >
-<ListView
-    android:layout_width="match_parent"
-    android:layout_height="217dp"
-    android:id="@+id/list_reminder"
-    android:layout_weight="0.73"
-    >
-
-</ListView>
-  <Button
+  <ListView
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="217dp"
+      android:id="@+id/list_reminder"
+      android:layout_weight="0.73"
+      android:background="#ede1ef">
+
+  </ListView>
+  <Button
       android:id="@+id/btn_reminder"
-      android:text="Set Reminder"
-      />
+
+      android:text="Set reminder"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp"
+
+      android:layout_width="270dp"
+      android:layout_height="60dp"
+      android:background="@drawable/set_reminder_user"
+      android:shadowColor="#51A81E"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="5"
+      tools:ignore="HardcodedText,RtlHardcoded"
+      android:layout_marginRight="50dp" />
+
 </LinearLayout>

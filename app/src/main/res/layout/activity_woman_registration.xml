@@ -1,118 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    >
+    android:background="@color/colorAccent">
   <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
       android:orientation="vertical"
-      >
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#c1b9c1"
+      android:weightSum="1">
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_full_name"
         android:id="@+id/txt_woman_fullname"
-        android:layout_width="match_parent"
+
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter Full Name"
-        />
+        android:hint="@string/enter_division"
+        android:id="@+id/txt_woman_division"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_weight="1" />
+
     <Spinner
+        android:layout_height="wrap_content"
         android:id="@+id/spn_woman_division"
+
+        android:layout_below="@+id/txt_woman_division"
+
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_weight="1"
+        android:dropDownWidth="300dp"
+        style="@style/spinner_style"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/divisions"
-        android:minHeight="40dp"
-        >
+        android:spinnerMode="dropdown">
     </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_district"
+        android:id="@+id/txt_woman_district"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:textSize="18sp" />
+
     <Spinner
-        android:id="@+id/spn_woman_district"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="40dp"
+        android:id="@+id/spn_woman_district"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_woman_district"
+
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_weight="1"
+        style="@style/spinner_style"
+        android:dropDownWidth="300dp"
         >
     </Spinner>
-    <EditText
-        android:id="@+id/txt_woman_opazila"
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Upazila"
+        android:id="@+id/txt_woman_upazila"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:textSize="18sp" />
+
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Opazila"
-        />
-    <EditText
-        android:id="@+id/txt_woman_union"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Union"
-        />
-    <EditText
-        android:id="@+id/txt_woman_mobile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Mobile"
-        />
-    <RadioButton
-        android:id="@+id/radio_woman"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pregnant Woman"
-        />
-    <LinearLayout
-        android:id="@+id/layout_woman"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:id="@+id/spn_woman_upazila"
+        android:layout_alignParentRight="true"
+
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_weight="1"
+        style="@style/spinner_style"
+        android:dropDownWidth="300dp"
         >
-      <Button
-          android:id="@+id/btn_woman_lmp_date"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="Select LMP Date"
-          />
-      <Button
-          android:id="@+id/btn_woman_due_date"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="Select Due Date"
-          />
-      <EditText
-          android:id="@+id/txt_woman_cycle_time"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="Cycle time (days)"
-          android:inputType="number"
-          />
-      <EditText
-          android:id="@+id/txt_woman_ovulation"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="Ovulation (days)"
-          android:inputType="number"
-          />
-      <EditText
-          android:id="@+id/txt_woman_prepregnancy"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="Pre Pregnanacy Weight (in kg)"
-          android:inputType="numberSigned"
-          />
-      <EditText
-          android:id="@+id/txt_woman_prepregnancy_height"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="Pre Pregnanacy Height (in cm)"
-          android:inputType="number"
-          />
-    </LinearLayout>
-    <RadioButton
-        android:id="@+id/radio_other"
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:hint="@string/enter_union"
+        android:id="@+id/txt_woman_union"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Other"
-        />
-    <Button
-        android:id="@+id/btn_woman_save"
+        android:id="@+id/spn_woman_union"
+        android:layout_alignParentRight="true"
+
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_weight="1"
+        style="@style/spinner_style"
+        android:dropDownWidth="300dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+    </Spinner>
+
+    <EditText
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/enter_number"
+        android:hint="@string/enter_mobilnumber"
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:singleLine="true" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group">
+
+      <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/pregnant_woman"
+          android:id="@+id/radio_woman"
+          android:textStyle="normal|bold" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:id="@+id/layout_woman"
+          android:weightSum="1">
+
+        <Button
+            android:text="@string/enter_date2"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_woman_lmp_date"
+            tools:text="Enter LMP Date"
+            android:background="@drawable/enter_date"
+            android:layout_marginLeft="60dp" />
+
+        <Button
+            android:text="@string/enter_date"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_woman_due_date"
+            tools:text="Enter DUE Date"
+            android:background="@drawable/enter_date"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="60dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cycle time (days)"
+            android:id="@+id/txt_woman_cycle_time"
+            tools:ignore="HardcodedText"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+            android:inputType="number"
+            android:singleLine="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ovulation_days"
+            android:inputType="number"
+            android:id="@+id/txt_woman_ovulation"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+            android:singleLine="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pre Pregnanacy Weight (in kg)"
+            android:inputType="number"
+            android:id="@+id/txt_woman_prepregnancy"
+            tools:ignore="HardcodedText"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pre_pregnanacy_height_in_cm"
+            android:inputType="number"
+            android:id="@+id/txt_woman_prepregnancy_height"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:textColor="@android:color/black"
+            android:singleLine="true" />
+
+      </LinearLayout>
+      <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Other"
+          android:id="@+id/radio_other"
+          tools:ignore="HardcodedText"
+          android:textStyle="normal|bold" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Save"
-        />
+        android:id="@+id/btn_woman_save"
+        tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="160dp"
+        android:layout_weight="0.30"
+        android:background="@drawable/enter_date"
+        android:layout_marginRight="50dp"/>
   </LinearLayout>
 
 </ScrollView>

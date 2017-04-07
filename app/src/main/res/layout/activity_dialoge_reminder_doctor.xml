@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0dae2">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reminder name"
+        android:id="@+id/txt_doctor_reminder_name"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reminder_date_doctor"
+        android:text="Reminder Date"
+        tools:ignore="HardcodedText"
+        android:background="#76c3db"
+        android:layout_marginBottom="5dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reminder_time_doctor"
+        android:text="@string/reminder_time"
+        android:layout_marginTop="5dp"
+        android:background="#76c3db" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reminder_details_user"
+        android:id="@+id/txt_doctor_reminder_details"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reminder_save_doctor"
+        android:text="@string/save_user"
+        android:background="#76c3db" />
+</LinearLayout>

@@ -1,36 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Reminder name"
-    android:id="@+id/txt_reminder_name"
-    />
-  <Button
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/btn_reminder_date"
-      android:text="Reminder Date"
-      />
-  <Button
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/btn_reminder_time"
-      android:text="Reminder Time"
-      />
+    android:layout_height="match_parent"
+    android:background="#ede1ef">
   <EditText
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:hint="Reminder details"
-      android:id="@+id/txt_reminder_details"
-      />
+      android:hint="Reminder name"
+      android:id="@+id/txt_reminder_name"
+      tools:ignore="HardcodedText"
+      android:textColor="#A542D6" />
   <Button
+      android:id="@+id/btn_reminder_date"
+      android:text="Reminder Date"
+      tools:ignore="HardcodedText,RtlHardcoded"
+      android:layout_marginBottom="5dp"
+      android:layout_marginTop="5dp"
+      android:layout_width="230dp"
+      android:layout_height="60dp"
+      android:background="@drawable/buttonsshape"
+      android:shadowColor="#A542D6"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="5"
+      android:layout_marginLeft="25dp"
+      android:textColor="@android:color/white"
+      android:layout_marginRight="60dp" />
+  <Button
+      android:id="@+id/btn_reminder_time"
+      android:text="@string/reminder_time_user"
+      android:layout_marginTop="5dp"
+      android:layout_width="230dp"
+      android:layout_height="60dp"
+      android:background="@drawable/buttonsshape"
+      android:shadowColor="#A542D6"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="5"
+      android:layout_marginLeft="25dp"
+      tools:ignore="RtlHardcoded"
+      android:layout_marginRight="60dp"
+      android:textColor="@android:color/white"
+      android:layout_marginBottom="5dp" />
+  <EditText
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:hint="@string/reminder_details_user"
+      android:id="@+id/txt_reminder_details"
+      android:textColor="#A542D6" />
+
+  <Button
+
       android:id="@+id/btn_reminder_save"
-      android:text="Save"
-      />
+      android:text="@string/save_user"
+      android:layout_marginTop="5dp"
+      android:layout_width="230dp"
+      android:layout_height="60dp"
+      android:background="@drawable/buttonsshape"
+      android:shadowColor="#A542D6"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="5"
+      android:layout_marginLeft="25dp"
+      tools:ignore="RtlHardcoded"
+      android:layout_marginRight="60dp"
+      android:textColor="@android:color/white"
+      android:textStyle="normal|bold"
+      android:layout_marginBottom="5dp" />
 </LinearLayout>

@@ -1,15 +1,959 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string-array name="divisions">
-    <item>Dhaka</item>
-    <item>Chittagong</item>
+  <string-array name="division">
+    <item>DHAKA</item>
+    <item>CHITTAGONG</item>
+    <item>RAJSHAHI</item>
+    <item>SYLHET</item>
+    <item>BARISAL</item>
+    <item>KHULNA</item>
+    <item>RANGPUR</item>
+    <item>MYMENSINGH</item>
   </string-array>
-  <string-array name="dhaka_distric">
-    <item>Dhaka</item>
-    <item>Gazipur</item>
+
+
+
+  <string-array name="dhaka_district">
+    <item>DHAKA</item>
+    <item>NARAYANGONJ</item>
+    <item>NARSINGDI</item>
+    <item>KISHOREGANJ</item>
+    <item>TANGAIL</item>
+    <item>FARIDPUR</item>
+    <item>RAJBARI</item>
+    <item>MUNSHIGANJ</item>
+    <item>GOPALGANJ</item>
+    <item>MADARIPUR</item>
+    <item>MANIKGANJ</item>
+    <item>SHARIATPUR</item>
+    <item>GAZIPUR</item>
   </string-array>
   <string-array name="ctg_distric">
     <item>Chittagong</item>
     <item>Commilla</item>
   </string-array>
+
+
+  <string-array name="dhaka_upazila_list">
+    <item> DHAMRAI</item>
+    <item>DOHAR</item>
+    <item>KERANIGANJ</item>
+    <item>NAWABGANJ</item>
+    <item>SAVAR</item>
+
+  </string-array>
+
+
+
+
+  <string-array name="gajipur_upazila_list">
+    <item>GAZIPUR SADAR</item>
+    <item> KALIAKAIR</item>
+    <item>KALIGANJ</item>
+    <item>KAPASIA</item>
+    <item>SREEPUR</item>
+
+  </string-array>
+
+  <string-array name="kishor_upazila_list">
+    <item>ASTAGRAM</item>
+    <item>BAJITPUR</item>
+    <item> BHAIRAB</item>
+    <item>HOSSAINPUR</item>
+    <item>ITNA</item>
+    <item>KARIMGAN</item>J
+    <item> KATIADI</item>
+    <item>KISHOREGANJ SADAR</item>
+    <item>KALIARCHAR</item>
+    <item> MITHAMAIN</item>
+    <item> NIKLI</item>
+    <item> PAKUNDIA </item>
+    <item>TARAIL</item>
+
+
+  </string-array>
+
+
+  <string-array name="gopal_upazila_list">
+    <item>GOPALGANJ SADAR</item>
+    <item>TUNGIPARA</item>
+    <item>MUKSUDPUR</item>
+    <item>KASHIANI</item>
+    <item>KASHIANI UPAZILA</item>
+
+  </string-array>
+
+  <string-array name="manik_upazila_list">
+    <item>MANIKGANJ SADAR</item>
+    <item>SINGAIR</item>
+    <item>SHIVALAYA</item>
+    <item>SATURIA</item>
+    <item>HARIRAMPUR</item>
+    <item>GHIOR </item>
+    <item>DAULATPUR UPAZILA</item>
+
+  </string-array>
+
+  <string-array name="madaripu_upazila_list">
+    <item>MADARIPUR SADAR</item>
+    <item>RAJOIR</item>
+    <item>KALKINI </item>
+    <item>SHIBCHAR UPAZILA </item>
+
+  </string-array>
+
+  <string-array name="munshigang_upazila_list">
+    <item>MUNSHIGANJ SADAR </item>
+    <item> LOHAJANG </item>
+    <item>SIRAJDIKHAN </item>
+    <item>SREENAGAR</item>
+    <item>GAZARIA </item>
+    <item>TONGIBARI UPAZILA </item>
+
+  </string-array>
+  <string-array name="razbari_upazila_list">
+    <item> RAJBARI SADAR</item>
+    <item>KALUKHALI</item>
+    <item>PANGSHA</item>
+    <item>GOALANDAGHAT</item>
+    <item>BALIKANDI UPAZILA</item>
+  </string-array>
+  <string-array name="narayangang_upazila_list">
+    <item> NARAYANGANJ SADAR</item>
+    <item>SONARGAON</item>
+    <item>RUPGANJ</item>
+    <item>BANDAR </item>
+    <item>ARAIHAZAR UPAZILA</item>
+  </string-array>
+
+  <string-array name="shariatpur_upazila_list">
+    <item>SHARIATPUR SADAR</item>
+    <item>SHAKHIPUR</item>
+    <item>ZAJIRA</item>
+    <item>NARIA</item>
+    <item>GOSAIRHAT</item>
+    <item>DAMUDYA</item>
+    <item>BHEDARGANJ</item>
+  </string-array>
+
+
+  <string-array name="faridpur">
+
+    <item> FARIDPUR SADAR</item>
+    <item> SALTHA</item>
+    <item>SADARPUR</item>
+    <item>NAGARKANDA</item>
+    <item>MADHUKHALI</item>
+    <item>CHARBHADRASAN</item>
+    <item>BOALMARI</item>
+    <item>BHANGA</item>
+    <item>ALFADANGA UPAZILA</item>
+  </string-array>
+
+  <string-array name="tangail">
+
+    <item>TANGAIL SADARR</item>
+    <item>DHANBARI</item>
+    <item>SAKHIPUR</item>
+    <item>NAGARPUR</item>
+    <item>MIRZAPUR</item>
+    <item>MADHUPUR</item>
+    <item>KALIHATI</item>
+    <item> GHATAIL</item>
+    <item> DELDUAR</item>
+    <item>BHUAPUR</item>
+    <item>BASAIL </item>
+    <item>GOPALPUR</item>
+  </string-array>
+  <string-array name="narsingdi">
+    <item>NARSINGDI SADAR</item>
+    <item>BELABO</item>
+    <item>SHIBPUR</item>
+    <item>RAIPUA</item>
+    <item>PALASH</item>
+    <item>MONOHARDI</item>
+  </string-array>
+
+
+
+
+
+
+
+
+  <string-array name="rajshahi_district_name">
+    <item>RAJSHAHI</item>
+    <item>SIRAJGANJ</item>
+    <item>BOGRA</item>
+    <item>PABNA</item>
+    <item>CHAPAINAWABGANJ</item>
+    <item>NATOR</item>
+    <item>JOYPURHAT</item>
+    <item>NAOGAON</item>
+  </string-array>
+
+
+  <string-array name="JOYPURHAT_DISTRICT">
+    <item>  Joypurhat Sadar Upazila</item>
+    <item> Kalai</item>
+    <item>  Akkelpur</item>
+    <item> Panchbibi </item>
+    <item>  Khetlal </item>
+  </string-array>
+  <string-array name="Joypurhat_Upazila">
+    <item>Amdoi</item>
+    <item>Banbu</item>
+    <item>Chakbarkat</item>
+    <item>Bhadsa</item>
+    <item>Dhalahar</item>
+    <item>Dogachhi</item>
+    <item>Jamalpur</item>
+    <item>Mohammadabad</item>
+    <item>Puranapoil</item>
+    <item>URBAN WARD NO 1</item>
+    <item> URBAN WARD NO 2</item>
+    <item> URBAN WARD NO 3</item>
+    <item> URBAN WARD NO 4</item>
+    <item> URBAN WARD NO 5</item>
+    <item> URBAN WARD NO 6</item>
+    <item> URBAN WARD NO 7</item>
+    <item> URBAN WARD NO 8</item>
+    <item> URBAN WARD NO 9</item>
+
+  </string-array>
+  <string-array name="Akkelpur_Upazila">
+    <item>URBAN WARD NO 1</item>
+    <item> URBAN WARD NO 2</item>
+    <item> URBAN WARD NO 3</item>
+    <item> URBAN WARD NO 4</item>
+    <item> URBAN WARD NO 5</item>
+    <item> URBAN WARD NO 6</item>
+    <item> URBAN WARD NO 7</item>
+    <item> URBAN WARD NO 8</item>
+    <item> URBAN WARD NO 9</item>
+    <item>Gopinathpur</item>
+    <item>Roykali</item>
+    <item>Rukindipur</item>
+    <item>Sonamukhi</item>
+    <item>Tilakpur</item>
+  </string-array>
+
+  <string-array name="Khetlal_Upazila">
+    <item>URBAN WARD NO 1</item>
+    <item> URBAN WARD NO 2</item>
+    <item> URBAN WARD NO 3</item>
+    <item> URBAN WARD NO 4</item>
+    <item> URBAN WARD NO 5</item>
+    <item> URBAN WARD NO 6</item>
+    <item> URBAN WARD NO 7</item>
+    <item> URBAN WARD NO 8</item>
+    <item> URBAN WARD NO 9</item>
+    <item>Alampur</item>
+    <item>Baratara</item>
+    <item>Barail</item>
+    <item>Khetlal</item>
+    <item>Mamudpur</item>
+  </string-array>
+  <string-array name="Panchbibi_Upazila">
+    <item>URBAN WARD NO 1</item>
+    <item> URBAN WARD NO 2</item>
+    <item> URBAN WARD NO 3</item>
+    <item> URBAN WARD NO 4</item>
+    <item> URBAN WARD NO 5</item>
+    <item> URBAN WARD NO 6</item>
+    <item> URBAN WARD NO 7</item>
+    <item> URBAN WARD NO 8</item>
+    <item> URBAN WARD NO 9</item>
+    <item>Awlai</item>
+    <item>Atapur</item>
+    <item>Ayma Rasulpur</item>
+    <item>Bagjana</item>
+    <item>Balighata</item>
+    <item>Dharanji</item>
+    <item>Kusumba</item>
+    <item>Mohammudpur</item>
+  </string-array>
+
+  <string-array name="Kalai_Upazila">
+
+    <item>URBAN WARD NO 1</item>
+    <item> URBAN WARD NO 2</item>
+    <item> URBAN WARD NO 3</item>
+    <item> URBAN WARD NO 4</item>
+    <item> URBAN WARD NO 5</item>
+    <item> URBAN WARD NO 6</item>
+    <item> URBAN WARD NO 7</item>
+    <item> URBAN WARD NO 8</item>
+    <item> URBAN WARD NO 9</item>
+    <item>Matrai</item>
+    <item>Punat</item>
+    <item>Udaypur</item>
+    <item>Zindarpur</item>
+    <item>Ahmmadabad</item>
+  </string-array>
+
+
+
+  <string-array name="BOGRA_DISTRICT">
+
+    <item>Adamdighi</item>
+    <item>Bogra Sadar</item>
+    <item>Dhunat</item>
+    <item> Dhupchanchia </item>
+    <item>Gabtali</item>
+    <item>Kahaloo</item>
+    <item>Nandigram</item>
+    <item>Sariakandi</item>
+    <item>Shajahanpur</item>
+    <item>Sherpur</item>
+    <item>Shibganj</item>
+    <item>Sonatola</item>
+  </string-array>
+
+  <string-array name="NAOGAON_DISTRICT">
+    <item> Naogaon Sadar</item>
+    <item> Manda</item>
+    <item> Atrai</item>
+    <item>Dhamoirhat</item>
+    <item> Badalgachhi</item>
+    <item>  Mohadevpur</item>
+    <item> Porsha</item>
+    <item> Niamatpur</item>
+    <item>  Patnitala</item>
+    <item> Sapahar</item>
+    <item> Raninagar</item>
+  </string-array>
+
+
+
+  <string-array name="NATORE_DISTRICT">
+    <item>Natore Sadar Upazila</item>
+    <item> Gurudaspur Upazila</item>
+    <item>Bagatipara Upazila</item>
+    <item>Lalpur Upazila</item>
+    <item> Singra Upazila</item>
+    <item>   Baraigram Upazila</item>
+    <item>Naldanga Upazila</item>
+  </string-array>
+
+
+
+
+
+  <string-array name="NAWABGANJ_DISTRICT">
+
+    <item>Nawabganj Sadar Upazila</item>
+    <item>  Nachole Upazila</item>
+    <item> Shibganj Upazila</item>
+    <item>  Bholahat Upazila</item>
+    <item>   Gomastapur Upazila</item>
+  </string-array>
+
+
+
+  <string-array name="PABNA_DISTRICT">
+    <item>Pabna Sadar Upazila</item>
+    <item>Bera Upazila</item>
+    <item>Ataikula Upazila</item>
+    <item>Chatmohar Upazila</item>
+    <item>Atgharia Upazila</item>
+    <item>Sujanagar Upazila</item>
+    <item>Faridpur Upazila</item>
+    <item>Ishwardi Upazila</item>
+    <item>Bhangura Upazila</item>
+    <item>Santhia Upazila</item>
+
+  </string-array>
+
+  <string-array name="SIRAJGANJ_DISTRICT">
+    <item>Sirajganj Sadar Upazila</item>
+    <item>  Belkuchi Upazila</item>
+    <item>  Chauhali Upazila</item>
+    <item> Kazipur Upazila</item>
+    <item>Kamarkhanda Upazila</item>
+    <item> Raiganj Upazila</item>
+    <item> Ullahpara Upazila</item>
+    <item> Tarash Upazila</item>
+    <item> Shahjadpur Upazila</item>
+
+  </string-array>
+
+  <string-array name="RAJSHAHI_DISTRICT">
+    <item> Mohanpur Upazila</item>
+    <item>Bagha Upazila</item>
+    <item> Charghat Upazila</item>
+    <item> Bagmara Upazila</item>
+    <item> Durgapur Upazila</item>
+    <item> Puthia Upazila</item>
+    <item> Tanore Upazila</item>
+    <item> Godagari Upazila</item>
+    <item> Paba Upazila</item>
+
+  </string-array>
+
+
+
+
+  <string-array name="sylhet_district_name">
+    <item>SYLHET</item>
+    <item>SUNAMGANJ</item>
+    <item>MOULVIBAZAR</item>
+    <item>HABIGANJ</item>
+  </string-array>
+
+  <string-array name="SUNAMGANJ_DISTRICT">
+    <item>  Sunamganj Sadar Upazila</item>
+    <item>  Bishwamvarpur Upazila</item>
+    <item> Chhatak Upazila</item>
+    <item>Jamalganj Upazila</item>
+    <item> Derai Upazila</item>
+    <item>  Jagannathpur Upazila</item>
+    <item> Dharamapasha Upazila</item>
+    <item>Dowarabazar Upazila</item>
+    <item>  Dakshin Sunamganj Upazila</item>
+    <item>Sullah Upazila</item>
+    <item>Tahirpur Upazila</item>
+
+  </string-array>
+
+  <string-array name="HABIGANJ_DISTRICT">
+    <item> Habiganj Sadar Upazila</item>
+    <item> Ajmiriganj Upazila</item>
+    <item>Baniyachong Upazila</item>
+    <item> Bahubal Upazila</item>
+    <item>Madhabpur Upazila</item>
+    <item> Chunarughat Upazila</item>
+    <item> Lakhai Upazila</item>
+    <item>Nabiganj Upazila</item>
+
+  </string-array>
+
+  <string-array name="MOULVIBAZAR_DISTRICT">
+    <item> Moulvibazar Sadar Upazila</item>
+    <item> Barlekha Upazila</item>
+    <item> Kamalganj Upazila</item>
+    <item> Juri Upazila</item>
+    <item> Kulaura Upazila</item>
+    <item> Rajnagar Upazila</item>
+    <item> Sreemangal Upazila </item>
+  </string-array>
+
+
+  <string-array name="SYLHET_DISTRIC">
+    <item> Sylhet Sadar Upazila</item>
+    <item> Balaganj Upazila</item>
+    <item>  Beanibazar Upazila</item>
+    <item> Bishwanath Upazila</item>
+    <item>  Gowainghat Upazila</item>
+    <item> Companigonj Upazila</item>
+    <item> Fenchuganj Upazila</item>
+    <item> Golapganj Upazila</item>
+    <item>Jaintiapur Upazila</item>
+    <item>  Kanaighat Upazila</item>
+    <item>      Osmani Nagar Upazila</item>
+    <item>    Zakiganj Upazila</item>
+    <item>   South Surma Upazila</item>
+  </string-array>
+
+
+
+  <string-array name="chittagong_district_name">
+    <item>CHITTAGONG</item>
+    <item>COX,S BAZAR</item>
+    <item>KHAGRACHHARI</item>
+    <item>RANGAMATI</item>
+    <item>BANDARBAN</item>
+    <item>COMILLA</item>
+    <item>NOAKHALI</item>
+    <item>LAKSHMIPUR</item>
+    <item>CHANDPUR</item>
+    <item>FENI</item>
+    <item>BRAHMANBARIA</item>
+  </string-array>
+
+
+  <string-array name="CHITTAGONG_DISTRICT">
+    <item> Boalkhali Upazila</item>
+    <item>  Anwara Upazila</item>
+    <item> Banshkhali Upazila</item>
+    <item> Chandanaish Upazila</item>
+    <item>  Fatikchhari Upazila</item>
+    <item> Hathazari Upazila</item>
+    <item> Lohagara Upazila</item>
+    <item>Mirsharai Upazila</item>
+    <item>Patiya Upazila</item>
+    <item>Rangunia Upazila</item>
+    <item>Raozan Upazila</item>
+    <item>Sitakunda Upazila</item>
+    <item>Sandwip Upazila</item>
+    <item>Satkania Upazila</item>
+    <item> Bandar Thana</item>
+    <item>Chandgaon Thana</item>
+    <item>Double Mooring Thana</item>
+    <item>Panchlaish Thana</item>
+    <item>  Kotwali Thana</item>
+    <item>Pahartali Thana</item>
+
+  </string-array>
+
+  <string-array name="BANDARBAN_DISTRICT">
+    <item> Bandarban Sadar Upazila</item>
+    <item> Ali Kadam Upazila</item>
+    <item>  Lama Upazila</item>
+    <item>   Thanchi Upazila</item>
+    <item>   Naikhongchhari Upazila</item>
+    <item>  Ruma Upazila</item>
+    <item>  Rowangchhari Upazila</item>
+  </string-array>
+
+
+  <string-array name="BRAHMANBARIA_DISTRICT">
+    <item>  Brahmanbaria Sadar Upazila</item>
+    <item>   Akhaura Upazila</item>
+    <item>  Bancharampur Upazila</item>
+    <item>  Kasba Upazila</item>
+    <item>  Nabinagar Upazila</item>
+    <item>  Nasirnagar Upazila</item>
+    <item>  Bijoynagar Upazila Sarail Upazila</item>
+    <item> Ashuganj Upazila</item>
+  </string-array>
+
+
+  <string-array name="CHANDPUR_DISTRICT">
+    <item> Chandpur Sadar Upazila</item>
+    <item>  Faridganj Upazila</item>
+    <item>  Haimchar Upazila</item>
+    <item>  Haziganj Upazila</item>
+    <item>Shahrasti Upazila</item>
+    <item> Kachua Upazila</item>
+    <item>  Matlab Dakshin Upazila</item>
+    <item> Matlab Uttar Upazila</item>
+  </string-array>
+
+
+  <string-array name="COMILLA_DISTRICT">
+    <item>  Comilla Sadar Dakshin Upazila</item>
+    <item> Comilla Adarsha Sadar Upazila</item>
+    <item>  Barura Upazila</item>
+    <item> Brahmanpara Upazila</item>
+    <item> Burichang Upazila</item>
+    <item>  Chandina Upazila</item>
+    <item> Chauddagram Upazila</item>
+    <item> Daudkandi Upazila</item>
+    <item> Debidwar Upazila</item>
+    <item>   Homna Upazila</item>
+    <item>    Laksam Upazila</item>
+    <item>  Muradnagar Upazila</item>
+    <item>    Nangalkot Upazila</item>
+    <item>     Monohargonj Upazila. </item>
+    <item>   Meghna Upazila</item>
+    <item>  Titas Upazila</item>
+  </string-array>
+
+
+  <string-array name="COX_BAZAR_DISTRICT">
+    <item>  Cox Bazar Sadar Upazila</item>
+    <item> Chakaria Upazila</item>
+    <item> Kutubdia Upazila</item>
+    <item>  Maheshkhali Upazila</item>
+    <item>  Ramu Upazila</item>
+    <item> Pekua Upazila</item>
+    <item>  Teknaf Upazila</item>
+    <item>Ukhia Upazila</item>
+  </string-array>
+
+
+  <string-array name="FENI_DISTRICT">
+    <item>  Feni Sadar Upazila</item>
+    <item> Chhagalnaiya Upazila</item>
+    <item>Daganbhuiyan Upazila</item>
+    <item> Fulgazi Upazila</item>
+    <item> Parshuram Upazila</item>
+    <item> Sonagazi Upazila</item>
+
+  </string-array>
+
+  <string-array name="KHAGRACHHARI_DISTRICT">
+    <item>Khagrachhari Upazila</item>
+    <item>  Dighinala Upazila</item>
+    <item> Lakshmichhari Upazila</item>
+    <item> Mahalchhari Upazila</item>
+    <item> Ramgarh Upazila</item>
+    <item>Manikchhari Upazila</item>
+    <item>   Matiranga Upazila </item>
+    <item> Panchhari Upazila</item>
+  </string-array>
+
+
+
+  <string-array name="LAKSHMIPUR_DISTRICT">
+    <item> Lakshmipur Sadar Upazila</item>
+    <item>  Ramganj Upazila</item>
+    <item> Raipur Upazila</item>
+    <item> Kamalnagar Upazila</item>
+    <item>  Ramgati Upazila</item>
+  </string-array>
+
+
+  <string-array name="NOAKHALI_DISTRICT">
+    <item>Noakhali Sadar Upazila</item>
+    <item>  Begumganj Upazila</item>
+    <item> Chatkhil Upazila</item>
+    <item>Senbagh Upazila</item>
+    <item>Companiganj Upazila</item>
+    <item> Hatiya Upazila</item>
+    <item>Kabirhat Upazila</item>
+    <item>  Sonaimuri Upazila</item>
+    <item> Subarnachar Upazila</item>
+  </string-array>
+
+
+
+  <string-array name="RANGAMATI_DISTRICT">
+    <item> Rangamati Sadar Upazila</item>
+    <item> Bagaichhari Upazila</item>
+    <item> Barkal Upazila</item>
+    <item>Kawkhali (Betbunia) Upazila</item>
+    <item>Belaichhari Upazila</item>
+    <item> Kaptai Upazila </item>
+    <item> Juraichhari Upazila</item>
+    <item> LangaduUpazila</item>
+    <item> Naniyachar Upazila</item>
+    <item>  Rajasthali Upazila </item>
+  </string-array>
+
+
+
+
+
+
+  <string-array name="barishal_district_name">
+
+    <item>BARISAL</item>
+    <item>PATUAKHALI</item>
+    <item>PIROJPUR</item>
+    <item>JHALOKATI</item>
+    <item>BHOLA</item>
+    <item>BARGUNA</item>
+  </string-array>
+
+  <string-array name="BARGUNA_DISTRICT">
+    <item>  Barguna Sadar Upazila</item>
+    <item> Amtali Upazila</item>
+    <item> Bamna Upazila</item>
+    <item> Taltoli Upazila</item>
+    <item> Betagi Upazila</item>
+    <item>  Patharghata Upazila</item>
+
+  </string-array>
+
+  <string-array name="BARISAL_DISTRICT">
+    <item>Barisal Sadar Upazila</item>
+    <item> Agailjhara Upazila</item>
+    <item> Babuganj Upazila</item>
+    <item> Bakerganj Upazila</item>
+    <item>   Hizla Upazila</item>
+    <item>   Banaripara Upazila</item>
+    <item> Gaurnadi Upazila</item>
+    <item>   Wazirpur Upazila</item>
+    <item> Mehendiganj Upazila</item>
+    <item>  Muladi Upazila</item>
+
+  </string-array>
+
+  <string-array name="BHOLA_DISTRICT">
+    <item> Bhola Sadar Upazila</item>
+    <item> Char Fasson Upazila</item>
+    <item>  Tazumuddin Upazila</item>
+    <item> Daulatkhan Upazila</item>
+    <item> Lalmohan Upazila</item>
+    <item> Manpura Upazila</item>
+    <item> Burhanuddin Upazila</item>
+  </string-array>
+
+
+  <string-array name="JHALOKATI_DISTRICT">
+    <item> Jhalokati Sadar Upazila</item>
+    <item>  Nalchity Upazila</item>
+    <item>   Kathalia Upazila</item>
+    <item>Rajapur Upazila</item>
+  </string-array>
+
+
+  <string-array name="PATUAKHALI_DISTRICT">
+    <item> Patuakhali Sadar Upazila</item>
+    <item> Bauphal Upazila</item>
+    <item> Galachipa Upazila</item>
+    <item> Dashmina Upazila</item>
+    <item> Kalapara Upazila</item>
+    <item>  Dumki Upazila</item>
+    <item>  Mirzaganj Upazila</item>
+    <item>  Rangabali Upazila</item>
+  </string-array>
+
+
+  <string-array name="PIROJPUR_DISTRICT">
+    <item>  Pirojpur Sadar Upazila</item>
+    <item>Bhandaria Upazila</item>
+    <item>Kawkhali Upazila</item>
+    <item>Nesarabad (Swarupkati) Upazila</item>
+    <item> Zianagor Upazila</item>
+    <item> Mathbaria Upazila</item>
+    <item> Nazirpur Upazila</item>
+  </string-array>
+
+
+
+
+
+
+  <string-array name="khulna_district">
+    <item>KHULNA</item>
+    <item>BAGERHAT</item>
+    <item>CHUADANGA</item>
+    <item>JESSORE</item>
+    <item>JHENAIDAH</item>
+    <item>KUSHTIA</item>
+    <item>MAGURA</item>
+    <item>MEHERPUR</item>
+    <item>NARAIL</item>
+    <item>SATKHIRA</item>
+
+  </string-array>
+
+
+  <string-array name="Khulna_District">
+    <item>  Dacope Upazila</item>
+    <item> Batiaghata Upazila</item>
+    <item>Dighalia Upazila</item>
+    <item> Dumuria Upazila</item>
+    <item>Koyra Upazila</item>
+    <item> Paikgachha Upazila</item>
+    <item>Phultala Upazila</item>
+    <item> Rupsha Upazila</item>
+    <item>  Daulatpur Thana</item>
+    <item>Terokhada Upazila</item>
+    <item>Khalishpur Thana</item>
+    <item>  Kotwali Thana</item>
+    <item>  Khan Jahan Ali Thana</item>
+    <item>   Harintana Thana</item>
+    <item>    Sonadanga Thana</item>
+  </string-array>
+
+
+  <string-array name="KUSHTIA_DISTRICT">
+    <item> Kushtia Sadar Upazila</item>
+    <item>Bheramara Upazila</item>
+    <item>   Kumarkhali Upazila</item>
+    <item>  Mirpur Upazila</item>
+    <item> Daulatpur Upazila</item>
+    <item>  Khoksa Upazila</item>
+  </string-array>
+
+
+  <string-array name="MAGURA_DISTRICT">
+    <item>Magura Sadar Upazila</item>
+    <item>  Sreepur Upazila</item>
+    <item> Mohammadpur Upazila</item>
+    <item> Shalikha Upazila</item>
+
+  </string-array>
+
+  <string-array name="MEHERPUR_DISTRICT">
+    <item> Meherpur Sadar Upazila</item>
+    <item> Mujibnagar Upazila</item>
+    <item>  Gangni Upazila</item>
+
+  </string-array>
+
+  <string-array name="NARAIL_DISTRICT">
+    <item> Narail Sadar Upazila</item>
+    <item> Kalia Upazila</item>
+    <item> Lohagara Upazila</item>
+    <item>Naragati Thana</item>
+  </string-array>
+
+
+  <string-array name="SATKHIRA_DISTRICT">
+    <item>Satkhira Sadar Upazila</item>
+    <item> Assasuni Upazila</item>
+    <item>  Debhata Upazila</item>
+    <item> Shyamnagar Upazila</item>
+    <item> Kalaroa Upazila</item>
+    <item>Tala Upazila</item>
+    <item>  Kaliganj Upazila</item>
+  </string-array>
+
+
+
+
+  <string-array name="Rangpur_district">
+
+    <item>RANGPUR</item>
+    <item>DINAJPUR</item>
+    <item>GAIBANDHA</item>
+    <item>KURIGRAM</item>
+    <item>LALMONIRHAT</item>
+    <item>NILPHAMARI</item>
+    <item>PANCHAGARH</item>
+    <item>THAKURGAON</item>
+  </string-array>
+
+  <string-array name="DINAJPUR_DISTRICT">
+    <item>Dinajpur Sadar Upazila</item>
+    <item> Biral Upazila</item>
+    <item> Birampur Upazila</item>
+    <item>Chirirbandar Upazila</item>
+    <item> Bochaganj Upazila</item>
+    <item> Phulbari Upazila</item>
+    <item> Birganj Upazila</item>
+    <item> Hakimpur Upazila</item>
+    <item> Ghoraghat Upazila</item>
+    <item>  Kaharole Upazila</item>
+    <item>  Parbatipur Upazila</item>
+    <item>   Khansama Upazila</item>
+    <item>  Nawabganj Upazila</item>
+  </string-array>
+
+
+  <string-array name="GAIBANDHA_DISTRICT">
+    <item>Gaibandha Sadar Upazila</item>
+    <item>Phulchhari Upazila</item>
+    <item>Sadullapur Upazila</item>
+    <item> Gobindaganj Upazila</item>
+    <item> Sughatta Upazila</item>
+    <item>Sundarganj Upazila</item>
+    <item>   Palashbari Upazila</item>
+
+
+  </string-array>
+
+
+  <string-array name="KURIGRAM_DISTRICT">
+    <item>  Kurigram Sadar Upazila</item>
+    <item>  Chilmari Upazila</item>
+    <item>Bhurungamari Upazila</item>
+    <item>  Char Rajibpur Upazila</item>
+    <item>Rajarhat Upazila</item>
+    <item>  Ulipur Upazila</item>
+    <item> Phulbari Upazila</item>
+    <item> Nageshwari Upazila</item>
+    <item> Raomari Upazila</item>
+  </string-array>
+
+
+  <string-array name="LALMONIRHAT_DISTRICT">
+    <item> Lalmonirhat Sadar Upazila</item>
+    <item> Aditmari Upazila</item>
+    <item>Kaliganj Upazila</item>
+    <item>Patgram Upazila</item>
+    <item> Hatibandha Upazila</item>
+  </string-array>
+
+
+  <string-array name="NILPHAMARI_DISTRICT">
+    <item> Nilphamari Sadar Upazila</item>
+    <item>  Dimla Upazila</item>
+    <item> Domar Upazila</item>
+    <item>Saidpur Upazila</item>
+    <item>Jaldhaka Upazila</item>
+    <item> Kishoreganj Upazila</item>
+  </string-array>
+
+
+  <string-array name="PANCHAGARH_DISTRICT">
+
+    <item>  Panchagarh Sadar Upazila</item>
+    <item>Atwari Upazila</item>
+    <item> Boda Upazila</item>
+    <item> Tetulia Upazila</item>
+    <item> Debiganj Upazila</item>
+  </string-array>
+
+
+  <string-array name="RANGPUR_DISTRICT">
+    <item>  Rangpur Sadar Upazila</item>
+    <item>  Badarganj Upazila</item>
+    <item>  Gangachhara Upazila</item>
+    <item> Pirganj Upazila</item>
+    <item>Kaunia Upazila</item>
+    <item>Mithapukur Upazila</item>
+    <item> Taraganj Upazila</item>
+    <item> Pirgachha Upazila</item>
+  </string-array>
+
+
+  <string-array name="THAKURGAON_DISTRICT">
+    <item>Thakurgaon Sadar Upazila</item>
+    <item> Baliadangi Upazila</item>
+    <item> Haripur Upazila</item>
+    <item>Ranisankail Upazila</item>
+    <item> Pirganj Upazila</item>
+  </string-array>
+
+
+
+  <string-array name="mymensingh_district">
+    <item>MYMENSINGH</item>
+    <item>SHERPUR</item>
+    <item>JAMALPUR</item>
+    <item>NETROKONA</item>
+  </string-array>
+
+
+  <string-array name="MYMENSINGH_DISTRICT">
+    <item>  Mymensingh Sadar Upazila</item>
+    <item> Bhaluka Upazila</item>
+    <item>  Gaffargaon Upazila</item>
+    <item> Dhobaura Upazila</item>
+    <item> Gauripur Upazila</item>
+    <item>Fulbaria Upazila</item>
+    <item>  Haluaghat Upazila</item>
+    <item>  Ishwarganj Upazila</item>
+    <item> Muktagachha Upazila</item>
+    <item>Nandail Upazila</item>
+    <item>Phulpur Upazila</item>
+    <item>Tara Khanda Upazila</item>
+    <item>Trishal Upazila</item>
+  </string-array>
+
+
+  <string-array name="JAMALPUR_DISTRICT">
+    <item> Jamalpur Sadar Upazila</item>
+    <item>  Baksiganj Upazila</item>
+    <item> Islampur Upazila</item>
+    <item> Dewanganj Upazila</item>
+    <item> Melandaha Upazila</item>
+    <item> Madarganj Upazila</item>
+    <item> Sarishabari Upazila</item>
+  </string-array>
+
+
+  <string-array name="SHERPUR_DISTRICT">
+    <item> Sherpur Sadar Upazila</item>
+    <item>  Nalitabari Upazila</item>
+    <item> Jhenaigati Upazila</item>
+    <item> Nakla Upazila</item>
+    <item> Sreebardi Upazila</item>
+  </string-array>
+
+
+  <string-array name="NETROKONA_DISTRICT">
+    <item>  Netrokona Sadar Upazila</item>
+    <item> Atpara Upazila</item>
+    <item>  Durgapur Upazila</item>
+    <item>Barhatta Upazila</item>
+    <item>   Kalmakanda Upazila</item>
+    <item>Khaliajuri Upazila</item>
+    <item>  Kendua Upazila</item>
+    <item> Madan Upazila</item>
+    <item> Purbadhala Upazila</item>
+    <item>  Mohanganj Upazila</item>
+  </string-array>
+
+
+
+
+
+
 </resources>

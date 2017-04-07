@@ -3,61 +3,75 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <TextView
-      android:id="@+id/txt_others"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:gravity="left"
-      android:paddingTop="10dp"
-      android:text="Others"
-      android:textSize="30sp"
-      />
+
   <Button
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
       android:id="@+id/btn_search_hospitals"
       android:text="Search for Hospitals"
-      />
+      android:textColor="#7F418B"
+      android:background="@drawable/enter_date"
+      android:layout_width="match_parent"
+      android:textStyle="normal|bold"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="2dp"
+      android:layout_height="50dp" />
 
   <Button
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
       android:id="@+id/btn_search_doctors"
       android:text="Search for Doctors"
-      />
+      android:textColor="#7F418B"
+      android:background="@drawable/enter_date"
+      android:layout_marginTop="2dp"
+      android:layout_height="50dp"
+      android:textStyle="normal|bold" />
 
   <Button
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="50dp"
       android:id="@+id/btn_others_ovulation_planner"
       android:text="Ovulation Planner"
-      />
+      android:textColor="#7F418B"
+      android:background="@drawable/enter_date"
+      android:layout_marginTop="4dp"
+      android:textStyle="normal|bold" />
 
   <Button
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="50dp"
       android:id="@+id/btn_others_all_week_tips"
       android:text="All Week Tips"
-      />
+      android:textColor="#7F418B"
+      android:background="@drawable/enter_date"
+      android:layout_marginTop="4dp"
+      android:textStyle="normal|bold" />
 
   <Button
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="50dp"
       android:id="@+id/btn_others_child_care"
       android:text="Child Care"
-      />
+      android:textColor="#7F418B"
+      android:background="@drawable/enter_date"
+      android:layout_marginTop="4dp"
+      android:textStyle="normal|bold" />
 
   <Button
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="50dp"
       android:id="@+id/btn_others_change_data"
       android:text="Change your Data"
-      />
+      android:textColor="#7F418B"
+      android:background="@drawable/enter_date"
+      android:layout_marginTop="4dp"
+      android:textStyle="normal|bold" />
 
   <Button
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="50dp"
       android:id="@+id/btn_others_help"
       android:text="Help"
-      />
+      android:textColor="#7F418B"
+      android:background="@drawable/enter_date"
+      android:layout_marginTop="4dp"
+      android:textStyle="normal|bold" />
 </LinearLayout>

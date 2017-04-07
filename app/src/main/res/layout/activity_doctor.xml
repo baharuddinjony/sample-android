@@ -9,20 +9,64 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#7ad3e2"
     >
 
   <LinearLayout
-      android:paddingTop="40dp"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="match_parent"
       android:orientation="vertical"
-      >
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registration"
-        android:id="@+id/btn_doctor_reg"
-        />
 
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_marginTop="33dp"
+      tools:ignore="UselessParent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:text="Registration For Doctor "
+        style="@android:style/Widget.Button"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:id="@+id/tex_registration_doctor"
+        android:textColor="#097789"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true">
+    </TextView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/down_arrow"
+        android:text="@string/Appoinment_request"
+        style="@android:style/Widget.Button"
+        tools:ignore="RtlHardcoded"
+        android:textColor="#097789"
+        android:id="@+id/Appointment_req">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/down_arrow"
+        style="@android:style/Widget.Button"
+        android:id="@+id/Appointment_list"
+        android:text="@string/Appointment_list"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:textColor="#097789">
+    </TextView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:drawableRight="@drawable/down_arrow"
+        android:text="@string/others"
+        style="@android:style/Widget.Button"
+        android:id="@+id/others_doctor"
+        tools:ignore="RtlHardcoded"
+        android:textColor="#097789">
+    </TextView>
   </LinearLayout>
 </RelativeLayout>
