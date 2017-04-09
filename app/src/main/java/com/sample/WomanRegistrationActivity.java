@@ -30,13 +30,17 @@ import java.util.Calendar;
 
 public class WomanRegistrationActivity extends AppCompatActivity {
 
+  @BindView(R.id.txt_woman_fullname) EditText mFullName;
+  @BindView(R.id.spn_woman_district) Spinner mDistrict;
+  @BindView(R.id.spn_woman_division) Spinner mDivision;
+
+
   @BindView(R.id.layout_woman) LinearLayout mLayoutWoman;
   @BindView(R.id.radio_woman) RadioButton mWoman;
   @BindView(R.id.radio_other) RadioButton mOther;
-  @BindView(R.id.spn_woman_district) Spinner mDistrict;
-  @BindView(R.id.spn_woman_division) Spinner mDivision;
-  @BindView(R.id.txt_woman_fullname) EditText mFullName;
-  @BindView(R.id.txt_woman_opazila) EditText mOpazilla;
+
+
+  @BindView(R.id.txt_woman_upazila) EditText mOpazilla;
   @BindView(R.id.txt_woman_union) EditText mUnion;
   @BindView(R.id.txt_woman_mobile) EditText mMobile;
   static Button mLmpDate;
@@ -58,6 +62,7 @@ public class WomanRegistrationActivity extends AppCompatActivity {
     ButterKnife.bind(this);
     mLmpDate = (Button) findViewById(R.id.btn_woman_lmp_date);
     mDueDate = (Button) findViewById(R.id.btn_woman_due_date);
+    mOther.setSelected(true);
     db = new DatabaseHelper(this);
     extractBundle();
   }
