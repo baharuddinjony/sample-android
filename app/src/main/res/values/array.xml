@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string-array name="division">
+  <string-array name="division_name">
     <item>DHAKA</item>
     <item>CHITTAGONG</item>
     <item>RAJSHAHI</item>
@@ -13,7 +13,7 @@
 
 
 
-  <string-array name="dhaka_district">
+  <string-array name="dhaka_district_name">
     <item>DHAKA</item>
     <item>NARAYANGONJ</item>
     <item>NARSINGDI</item>
@@ -28,10 +28,7 @@
     <item>SHARIATPUR</item>
     <item>GAZIPUR</item>
   </string-array>
-  <string-array name="ctg_distric">
-    <item>Chittagong</item>
-    <item>Commilla</item>
-  </string-array>
+
 
 
   <string-array name="dhaka_upazila_list">

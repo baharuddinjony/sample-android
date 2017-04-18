@@ -55,49 +55,49 @@ public class DatabaseHelper extends SQLiteOpenHelper {
   // Creating Tables
   @Override public void onCreate(SQLiteDatabase db) {
     String CREATE_REG_TABLE = "CREATE TABLE "
-        + TABLE_REGISTRATION
-        + "("
-        + KEY_ID
-        + " INTEGER PRIMARY KEY,"
-        + KEY_NAME
-        + " TEXT,"
-        + KEY_DIVISION
-        + " TEXT,"
-        + KEY_DISTRICT
-        + " TEXT,"
-        + KEY_OPAZILA
-        + " TEXT,"
-        + KEY_UNION
-        + " TEXT,"
-        + KEY_MOBILE
-        + " TEXT,"
-        + KEY_LAP
-        + " TEXT,"
-        + KEY_DUE
-        + " TEXT,"
-        + KEY_CYCLE
-        + " INTEGER,"
-        + KEY_OVULATION
-        + " INTEGER,"
-        + KEY_WEIGHT
-        + " REAL,"
-        + KEY_HEIGHT
-        + " INTEGER"
-        + ")";
+            + TABLE_REGISTRATION
+            + "("
+            + KEY_ID
+            + " INTEGER PRIMARY KEY,"
+            + KEY_NAME
+            + " TEXT,"
+            + KEY_DIVISION
+            + " TEXT,"
+            + KEY_DISTRICT
+            + " TEXT,"
+            + KEY_OPAZILA
+            + " TEXT,"
+            + KEY_UNION
+            + " TEXT,"
+            + KEY_MOBILE
+            + " TEXT,"
+            + KEY_LAP
+            + " TEXT,"
+            + KEY_DUE
+            + " TEXT,"
+            + KEY_CYCLE
+            + " INTEGER,"
+            + KEY_OVULATION
+            + " INTEGER,"
+            + KEY_WEIGHT
+            + " REAL,"
+            + KEY_HEIGHT
+            + " INTEGER"
+            + ")";
     String CREATE_REMINDER_TABLE = "CREATE TABLE "
-        + TABLE_REMINDER
-        + "("
-        + KEY_REM_ID
-        + " INTEGER PRIMARY KEY,"
-        + KEY_REM_TITLE
-        + " TEXT,"
-        + KEY_REM_MESSAGE
-        + " TEXT,"
-        + KEY_REM_DATE
-        + " TEXT,"
-        + KEY_REM_TIME
-        + " TEXT"
-        + ")";
+            + TABLE_REMINDER
+            + "("
+            + KEY_REM_ID
+            + " INTEGER PRIMARY KEY,"
+            + KEY_REM_TITLE
+            + " TEXT,"
+            + KEY_REM_MESSAGE
+            + " TEXT,"
+            + KEY_REM_DATE
+            + " TEXT,"
+            + KEY_REM_TIME
+            + " TEXT"
+            + ")";
     db.execSQL(CREATE_REG_TABLE);
     db.execSQL(CREATE_REMINDER_TABLE);
   }

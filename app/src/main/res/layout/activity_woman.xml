@@ -41,7 +41,7 @@
         android:id="@+id/txt_date_status"
         android:text="Date Status"
         style="@android:style/Widget.Button"
-        >
+        android:textColor="@color/colorAccent">
 
     </TextView>
     <TextView
@@ -51,7 +51,7 @@
         android:id="@+id/txt_weight_status"
         android:text="Weight Status"
         style="@android:style/Widget.Button"
-        >
+        android:textColor="@color/colorAccent">
     </TextView>
     <TextView
         android:layout_width="fill_parent"
@@ -60,7 +60,7 @@
         android:id="@+id/txt_week_info"
         android:text="Week Info"
         style="@android:style/Widget.Button"
-        >
+        android:textColor="@color/colorAccent">
     </TextView>
     <TextView
         android:layout_width="fill_parent"
@@ -69,7 +69,7 @@
         android:id="@+id/txt_baby_this_week"
         android:text="Your Baby This Week"
         style="@android:style/Widget.Button"
-        >
+        android:textColor="@color/colorAccent">
     </TextView>
     <TextView
         android:layout_width="fill_parent"
@@ -78,7 +78,7 @@
         android:id="@+id/txt_daily_tips"
         android:text="Weekly Tips"
         style="@android:style/Widget.Button"
-        >
+        android:textColor="@color/colorAccent">
     </TextView>
     <TextView
         android:layout_width="fill_parent"
@@ -87,7 +87,7 @@
         android:id="@+id/txt_set_reminder"
         android:text="Set Reminder"
         style="@android:style/Widget.Button"
-        >
+        android:textColor="@color/colorAccent">
     </TextView>
     <TextView
         android:layout_width="fill_parent"
@@ -96,7 +96,7 @@
         android:id="@+id/txt_others"
         android:text="Others"
         style="@android:style/Widget.Button"
-        >
+        android:textColor="@color/colorAccent">
     </TextView>
 
   </LinearLayout>

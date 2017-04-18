@@ -14,6 +14,7 @@ public class WomanRegistration  {
   private String mobile;
   private String lmpDate;
   private String dueDate;
+  private String user_choise;
   private int cycleDays;
   private int ovulationDays;
   private float prePregnancyWeight;
@@ -122,4 +123,6 @@ public class WomanRegistration  {
   public void setPrePregnancyHeight(int prePregnancyHeight) {
     this.prePregnancyHeight = prePregnancyHeight;
   }
+  public String getuser_choise(){return user_choise;}
+  public void setuser_choise(String s){this.user_choise=user_choise;}
 }

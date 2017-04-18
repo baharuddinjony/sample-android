@@ -16,59 +16,120 @@
         android:layout_height="wrap_content"
         android:hint="@string/enter_full_name"
         android:id="@+id/txt_woman_fullname"
+
         tools:ignore="HardcodedText"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:singleLine="true" />
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_division"
+        android:id="@+id/txt_woman_division"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_weight="1" />
 
     <Spinner
         android:layout_height="wrap_content"
         android:id="@+id/spn_woman_division"
-        android:layout_width="match_parent"
-        android:entries="@array/division">
 
+        android:layout_below="@+id/txt_woman_division"
+
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_weight="1"
+        android:dropDownWidth="300dp"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown">
     </Spinner>
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_district"
+        android:id="@+id/txt_woman_district"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:textSize="18sp" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spn_woman_district"
-        android:paddingTop="10dp"
-         android:entries="@array/dhaka_district"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_woman_district"
+
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_weight="1"
+        style="@style/spinner_style"
+        android:dropDownWidth="300dp"
         >
     </Spinner>
 
-    <EditText
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter Upazila"
         android:id="@+id/txt_woman_upazila"
         tools:ignore="HardcodedText"
         android:textColor="@android:color/white"
+        android:layout_weight="1"
         android:textSize="18sp" />
 
-    <EditText
+    <Spinner
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_woman_upazila"
+        android:layout_alignParentRight="true"
+
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_weight="1"
+        style="@style/spinner_style"
+        android:dropDownWidth="300dp"
+        >
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
         android:hint="@string/enter_union"
         android:id="@+id/txt_woman_union"
         tools:ignore="HardcodedText"
         android:textColor="@android:color/white"
+        android:layout_weight="1"
         android:textSize="18sp"
         android:layout_height="wrap_content" />
 
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_woman_union"
+        android:layout_alignParentRight="true"
+
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_weight="1"
+        style="@style/spinner_style"
+        android:dropDownWidth="300dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+    </Spinner>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:id="@+id/txt_woman_mobile"
+        android:id="@+id/enter_number"
         android:hint="@string/enter_mobilnumber"
         android:textColor="@android:color/black"
         android:maxLines="1"
-/>
+        android:singleLine="true" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group">
 
       <RadioButton
           android:layout_width="match_parent"
@@ -80,8 +141,8 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:orientation="vertical"
-          android:visibility="visible"
-          android:id="@+id/layout_woman">
+          android:id="@+id/layout_woman"
+          android:weightSum="1">
 
         <Button
             android:text="@string/enter_date2"
@@ -110,7 +171,8 @@
             tools:ignore="HardcodedText"
             android:textColor="@android:color/black"
             android:maxLines="1"
-            android:inputType="number" />
+            android:inputType="number"
+            android:singleLine="true" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -118,7 +180,8 @@
             android:inputType="number"
             android:id="@+id/txt_woman_ovulation"
             android:textColor="@android:color/black"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:singleLine="true" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,7 +190,8 @@
             android:id="@+id/txt_woman_prepregnancy"
             tools:ignore="HardcodedText"
             android:textColor="@android:color/black"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:singleLine="true" />
 
         <EditText
             android:layout_width="match_parent"
@@ -137,7 +201,8 @@
             android:id="@+id/txt_woman_prepregnancy_height"
             android:maxLines="1"
             android:selectAllOnFocus="false"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:singleLine="true" />
 
       </LinearLayout>
       <RadioButton
@@ -147,13 +212,20 @@
           android:id="@+id/radio_other"
           tools:ignore="HardcodedText"
           android:textStyle="normal|bold" />
+    </RadioGroup>
 
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Save"
         android:id="@+id/btn_woman_save"
-        android:background="@drawable/enter_date" />
+        tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="160dp"
+        android:layout_weight="0.30"
+        android:background="@drawable/enter_date"
+        android:layout_marginRight="50dp"/>
   </LinearLayout>
 
 </ScrollView>
