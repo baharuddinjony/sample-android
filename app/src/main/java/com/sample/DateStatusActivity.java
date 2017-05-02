@@ -35,28 +35,38 @@ public class DateStatusActivity extends AppCompatActivity {
     db = new DatabaseHelper(this);
     dateFormat = new SimpleDateFormat("dd/MM/yyyy");
     WomanRegistration reg = db.getRegistration();
-    mDueDate.setText(mDueDate.getText() + reg.getDueDate());
-    mLmpDate.setText(mLmpDate.getText() + reg.getLmpDate());
-    //Date pDate=null;
-    Date  remaining=null;
-    long diff=0,diffRemaining=0;
+    if(reg.getDueDate().equals("Enter Due Date")){
+      mDueDate.setText("Due Date: " + "0");
+      mLmpDate.setText("LMP Date: " + "0");
+      mPregnantDate.setText("Pregnant for: " +"0");
+      mFataAge.setText(mFataAge.getText() + "0");
 
-    try {
-      diff=new Date().getTime() - dateFormat.parse(reg.getLmpDate()).getTime();
-      //pDate=new Date();
-      diffRemaining =dateFormat.parse(reg.getDueDate()).getTime()-new Date().getTime();
+      mRemainingTime.setText(mRemainingTime.getText() + "0");
+    }else {
+      mDueDate.setText(mDueDate.getText() + reg.getDueDate());
+      mLmpDate.setText(mLmpDate.getText() + reg.getLmpDate());
+      //Date pDate=null;
+      Date  remaining=null;
+      long diff=0,diffRemaining=0;
 
-    } catch (ParseException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
+      try {
+        diff=new Date().getTime() - dateFormat.parse(reg.getLmpDate()).getTime();
+        //pDate=new Date();
+        diffRemaining =dateFormat.parse(reg.getDueDate()).getTime()-new Date().getTime();
+
+      } catch (ParseException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+      }
+      Calendar c = Calendar.getInstance();
+      c.setTime(new Date());
+      c.add(Calendar.DATE, -1 *((int)TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS)+14)); // Adding 14 days
+
+      mPregnantDate.setText(mPregnantDate.getText() +dateFormat.format(c.getTime()) );
+      mFataAge.setText(mFataAge.getText() + String.valueOf(TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS) ));
+
+      mRemainingTime.setText(mRemainingTime.getText() + String.valueOf(TimeUnit.DAYS.convert(diffRemaining, TimeUnit.MILLISECONDS) ));
     }
-    Calendar c = Calendar.getInstance();
-    c.setTime(new Date());
-    c.add(Calendar.DATE, -1 *((int)TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS)+14)); // Adding 14 days
 
-    mPregnantDate.setText(mPregnantDate.getText() +dateFormat.format(c.getTime()) );
-    mFataAge.setText(mFataAge.getText() + String.valueOf(TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS) ));
-
-    mRemainingTime.setText(mRemainingTime.getText() + String.valueOf(TimeUnit.DAYS.convert(diffRemaining, TimeUnit.MILLISECONDS) ));
   }
 }

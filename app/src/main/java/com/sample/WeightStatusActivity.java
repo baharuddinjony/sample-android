@@ -40,26 +40,31 @@ public class WeightStatusActivity extends AppCompatActivity {
     if (mWeightInput.getText().toString().equals("")) {
       Toast.makeText(this, "Enter Weight", Toast.LENGTH_LONG).show();
     } else {
+      if(reg.getDueDate().equals("Enter Due Date")){
+        mWeightStatus.setText("You are not pregnant ");
+      }else {
+        long diff=0,diffRemaining=0;
 
-      long diff=0,diffRemaining=0;
+        try {
+          diff=new Date().getTime() - dateFormat.parse(reg.getLmpDate()).getTime();
+          long days=TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+          int week=(int)days/7;
+          //now assume from weight table , weight range  will increase 2 kg after every five weeks
+          float weight=reg.getPrePregnancyWeight()+ week/5 +2;
+          float currentWeight=Float.parseFloat(mWeightInput.getText().toString());
+          if(weight>currentWeight){
+            mWeightStatus.setText("You are over weight for "+ (currentWeight-weight) +" Kg");
+          }else {
+            mWeightStatus.setText("You are under weight for "+ (weight- currentWeight) +" Kg");
+          }
 
-      try {
-        diff=new Date().getTime() - dateFormat.parse(reg.getLmpDate()).getTime();
-        long days=TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
-        int week=(int)days/7;
-        //now assume from weight table , weight range  will increase 2 kg after every five weeks
-        float weight=reg.getPrePregnancyWeight()+ week/5 +2;
-        float currentWeight=Float.parseFloat(mWeightInput.getText().toString());
-        if(weight>currentWeight){
-          mWeightStatus.setText("You are over weight for "+ (currentWeight-weight) +" Kg");
-        }else {
-          mWeightStatus.setText("You are under weight for "+ (weight- currentWeight) +" Kg");
+        } catch (ParseException e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
         }
-
-      } catch (ParseException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
       }
+
+
     }
   }
 }
