@@ -2,9 +2,19 @@ package com.sample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.sample.db.DatabaseHelper;
+import com.sample.models.WomanRegistration;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -20,13 +30,31 @@ public class ThisWeekActivity extends AppCompatActivity {
   @BindView(R.id.btn_previous) Button mPrevious;
   @BindView(R.id.btn_next) Button mNext;
   private int counter = 2;
+  private DatabaseHelper db;
+  private SimpleDateFormat dateFormat = null;
+  private WomanRegistration reg = null;
+
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_this_week);
     ButterKnife.bind(this);
+    mNext.setVisibility(View.GONE);
+    mPrevious.setVisibility(View.GONE);
     mPrevious.setEnabled(false);
-    showData(2);
+    db = new DatabaseHelper(this);
+    dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+    reg = db.getRegistration();
+    long diff = 0;
+
+    try {
+      diff = new Date().getTime() - dateFormat.parse(reg.getLmpDate()).getTime();
+    } catch (ParseException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    int week = ((int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS))/7;
+    showData(week);
   }
 
   @OnClick(R.id.btn_previous) public void setPrevious() {
@@ -51,6 +79,10 @@ public class ThisWeekActivity extends AppCompatActivity {
 
   private void showData(int counter) {
     switch (counter) {
+      case 1:
+        mInfo.setText("This is first week\n\n" + getResources().getString(R.string.one));
+        mImage.setImageResource(R.drawable.two);
+        break;
       case 2:
         mInfo.setText("This is Week 2\n\n" + getResources().getString(R.string.two));
         mImage.setImageResource(R.drawable.two);

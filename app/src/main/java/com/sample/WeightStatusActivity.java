@@ -52,10 +52,14 @@ public class WeightStatusActivity extends AppCompatActivity {
           //now assume from weight table , weight range  will increase 2 kg after every five weeks
           float weight=reg.getPrePregnancyWeight()+ week/5 +2;
           float currentWeight=Float.parseFloat(mWeightInput.getText().toString());
-          if(weight>currentWeight){
+          if(currentWeight>weight){
             mWeightStatus.setText("You are over weight for "+ (currentWeight-weight) +" Kg");
-          }else {
-            mWeightStatus.setText("You are under weight for "+ (weight- currentWeight) +" Kg");
+          }
+          else if(weight==currentWeight){
+            mWeightStatus.setText("Your weight is perfect");
+          }
+          else {
+            mWeightStatus.setText("You are under weight for "+ (weight-currentWeight) +" Kg");
           }
 
         } catch (ParseException e) {
